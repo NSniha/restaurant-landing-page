@@ -2,399 +2,1066 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="TasteNest serves hot, handcrafted pizza made with bold flavors and fresh ingredients.">
-    <meta name="theme-color" content="#d12427">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TasteNest | Fresh Pizza, Big Flavor</title>
+  <meta name="description" content="TasteNest - Freshly prepared pizza, delicious food and unforgettable flavors.">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+  <meta name="theme-color" content="#d32228">
 
-    <link rel="preload" href="assets/pizza.png" as="image" fetchpriority="high">
+  <title>TasteNest | Delicious Food Restaurant</title>
 
-    <link rel="stylesheet" href="/css/style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
-    <script src="/js/script.js" defer></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+
+  <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="/js/script.js" defer></script>
 </head>
 
 <body>
 
-    <div class="scroll-progress" aria-hidden="true"></div>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" aria-hidden="true"></div>
 
-    <!-- ================= HEADER ================= -->
+  <!-- ================= HEADER ================= -->
 
-    <header class="site-header" id="site-header">
+  <header class="header" id="header">
+    <div class="container header-container">
 
-        <div class="container header__inner">
+      <!-- Logo -->
+      <a href="#home" class="logo" aria-label="TasteNest Homepage">
+        <img src="/images/logo.svg" alt="TasteNest Restaurant Logo" width="160" height="75">
+      </a>
 
-            <!-- SVG Logo -->
-            <a class="brand" href="#home" aria-label="TasteNest home">
+      <!-- Navigation -->
+      <nav class="navbar" id="navbar" aria-label="Main Navigation">
 
-                <svg class="brand__logo" viewBox="0 0 190 79" role="img" aria-labelledby="brand-title">
-                    <title id="brand-title">
-                        TasteNest Fast Food Restaurant
-                    </title>
+        <ul class="nav-list">
 
-                    <g fill="none" stroke="#ff7a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3">
-                        <path d="M30 24c-7-1-9-12-2-16 4-3 8-1 10 1
-              3-7 15-7 18 1 8-2 14 5 11 11
-              -1 4-5 6-9 6" />
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" type="button" aria-expanded="false">
+              Home
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
 
-                        <path d="M29 26c11 3 23 3 34 1l-2 8H31l-2-9Z" />
+            <ul class="dropdown-menu">
+              <li><a href="#home">Home One</a></li>
+              <li><a href="#home">Home Two</a></li>
+              <li><a href="#home">Home Three</a></li>
+            </ul>
+          </li>
 
-                        <path d="M39 16c-3 3-4 6-2 10m13-13c3 4 3 8 1 13" />
-                    </g>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About Us</a>
+          </li>
 
-                    <g fill="#171717" font-family="Barlow Condensed, sans-serif" font-weight="900">
-                        <text x="10" y="59" font-size="43" letter-spacing="-1.6">
-                            TasteNest
-                        </text>
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" type="button" aria-expanded="false">
+              Shop
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
 
-                        <text x="42" y="71" font-family="DM Sans, sans-serif" font-size="8.5" font-weight="700">
-                            Fast Food Restaurant
-                        </text>
-                    </g>
+            <ul class="dropdown-menu">
+              <li><a href="#shop">Shop Grid</a></li>
+              <li><a href="#shop">Shop Details</a></li>
+              <li><a href="#shop">Shopping Cart</a></li>
+            </ul>
+          </li>
 
-                    <g fill="#171717">
-                        <circle cx="3" cy="43" r="1.8" />
-                        <circle cx="7" cy="48" r="1.8" />
-                        <circle cx="3" cy="53" r="1.8" />
-                    </g>
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" type="button" aria-expanded="false">
+              Blog
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
 
-                    <path d="m153 63 11-4 11 6" fill="none" stroke="#ec2921" stroke-width="4" stroke-linecap="round" />
+            <ul class="dropdown-menu">
+              <li><a href="#blog">Blog Grid</a></li>
+              <li><a href="#blog">Blog Details</a></li>
+            </ul>
+          </li>
 
-                    <path d="m172 64 7 7" fill="none" stroke="#ec2921" stroke-width="6" stroke-linecap="round" />
-                </svg>
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" type="button" aria-expanded="false">
+              Pages
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
 
+            <ul class="dropdown-menu">
+              <li><a href="#pages">Our Team</a></li>
+              <li><a href="#pages">FAQ</a></li>
+              <li><a href="#pages">Gallery</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+
+        <!-- Cart -->
+        <button class="cart-btn" id="cart-btn" type="button" aria-label="Shopping Cart">
+          <ion-icon name="basket-outline"></ion-icon>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+
+        <!-- Contact Button -->
+        <a href="#contact" class="btn btn-contact">
+          <span>Contact Us</span>
+        </a>
+
+        <!-- Mobile Menu -->
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open Menu" aria-expanded="false"
+          aria-controls="navbar">
+          <ion-icon name="menu-outline" class="menu-open"></ion-icon>
+          <ion-icon name="close-outline" class="menu-close"></ion-icon>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+
+  <main>
+
+    <section class="hero" id="home">
+
+      <!-- Background Overlay -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+
+        <!-- Left Content -->
+        <div class="hero-content">
+
+          <div class="hero-text" id="hero-text">
+
+            <h1 class="hero-title" id="hero-title">
+              <span>SUPER</span>
+              <span>DELICIOUS</span>
+              <span>PIZZA</span>
+            </h1>
+
+            <p class="hero-description" id="hero-description">
+              Start Your Order Just Only $25.00
+            </p>
+
+            <a href="#shop" class="btn btn-order" id="order-btn">
+              <span>Order Now</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
 
-            <!-- Navigation -->
-            <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+          </div>
 
-                <ul class="nav-list">
+          <!-- Slider Controls -->
+          <div class="hero-slider-controls">
 
-                    <li class="nav-item has-dropdown">
+            <button class="slider-arrow slider-prev" id="slider-prev" type="button" aria-label="Previous Slide">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </button>
 
-                        <button class="nav-link dropdown-trigger" type="button" aria-expanded="false"
-                            aria-controls="home-menu">
-                            Home
+            <span class="current-slide" id="current-slide">02</span>
 
-                            <ion-icon name="chevron-down-outline" aria-hidden="true"></ion-icon>
-                        </button>
-
-                        <ul class="dropdown" id="home-menu">
-                            <li><a href="#home">Pizza Special</a></li>
-                            <li><a href="#home">Today's Offer</a></li>
-                        </ul>
-
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-
-                    <li class="nav-item has-dropdown">
-
-                        <button class="nav-link dropdown-trigger" type="button" aria-expanded="false"
-                            aria-controls="shop-menu">
-                            Shop
-
-                            <ion-icon name="chevron-down-outline" aria-hidden="true"></ion-icon>
-                        </button>
-
-                        <ul class="dropdown" id="shop-menu">
-                            <li><a href="#shop">Our Menu</a></li>
-                            <li><a href="#shop">Best Sellers</a></li>
-                        </ul>
-
-                    </li>
-
-                    <li class="nav-item has-dropdown">
-
-                        <button class="nav-link dropdown-trigger" type="button" aria-expanded="false"
-                            aria-controls="blog-menu">
-                            Blog
-
-                            <ion-icon name="chevron-down-outline" aria-hidden="true"></ion-icon>
-                        </button>
-
-                        <ul class="dropdown" id="blog-menu">
-                            <li><a href="#blog">Latest Stories</a></li>
-                            <li><a href="#blog">Food Journal</a></li>
-                        </ul>
-
-                    </li>
-
-                    <li class="nav-item has-dropdown">
-
-                        <button class="nav-link dropdown-trigger" type="button" aria-expanded="false"
-                            aria-controls="pages-menu">
-                            Pages
-
-                            <ion-icon name="chevron-down-outline" aria-hidden="true"></ion-icon>
-                        </button>
-
-                        <ul class="dropdown" id="pages-menu">
-                            <li><a href="#pages">Our Team</a></li>
-                            <li><a href="#pages">FAQs</a></li>
-                        </ul>
-
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-            <!-- Header Actions -->
-            <div class="header__actions">
-
-                <button class="cart-button" id="cart-button" type="button" aria-label="Open basket, 0 items">
-                    <ion-icon name="basket-outline" aria-hidden="true"></ion-icon>
-
-                    <span class="cart-count" id="cart-count">0</span>
-                </button>
-
-                <button class="contact-button" id="contact-button" type="button">
-                    Contact Us
-                </button>
-
-                <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu"
-                    aria-controls="primary-nav" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
+            <div class="slider-progress" id="slider-progress" aria-hidden="true">
+              <span class="slider-progress-bar"></span>
             </div>
+
+            <span class="total-slide">/ 03</span>
+
+            <button class="slider-arrow slider-next" id="slider-next" type="button" aria-label="Next Slide">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+
+          </div>
 
         </div>
 
-    </header>
+        <!-- Right Image -->
+        <div class="hero-image-wrapper" id="hero-image-wrapper">
 
-    <!-- ================= HERO ================= -->
+          <img src="/images/pizza.png" alt="Delicious freshly baked pizza with vegetables" class="hero-image"
+            id="hero-image" width="750" height="750" fetchpriority="high">
 
-    <main>
+        </div>
 
-        <section class="hero" id="home" aria-labelledby="hero-title">
+      </div>
 
-            <!-- Decorative SVG Illustrations -->
-            <div class="hero__art" aria-hidden="true">
+    </section>
 
-                <svg class="doodle doodle--garlic" viewBox="0 0 120 110">
-                    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path
-                            d="M58 27c-12-14-30-7-34 8C6 38 4 60 21 82c11 14 27 15 39 8 14 7 29-1 36-17 9-24-2-44-20-45-4-9-12-14-18-16" />
-                        <path
-                            d="M60 25c-21 11-32 37-24 59m24-59c-1 25-2 52-1 65m2-63c20 15 26 35 20 54M61 24C48 15 32 12 22 22m42 4c12-5 25-5 37 1M58 26c9-12 15-13 27-12M36 61c-8-6-15-9-23-10" />
-                        <path d="M57 27c-2-10-1-15 5-21 5 5 7 10 7 18" />
-                    </g>
-                </svg>
+    <!-- ================= ABOUT SECTION ================= -->
 
-                <svg class="doodle doodle--pepper" viewBox="0 0 90 110">
-                    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path
-                            d="M38 33c-12-7-26 4-25 23 1 22 10 38 22 38 8 0 10-8 15-8 5 1 6 9 15 8 12-1 19-18 18-38-1-19-15-29-27-22-5 4-13 3-18-1Z" />
-                        <path
-                            d="M47 34C38 27 29 33 28 48m19-14c-4 18-3 42 0 57m8-56c13 12 16 32 12 51M40 35c-10 15-13 39-5 54M45 32c-2-13-1-21 7-28m-6 19C57 14 66 15 72 23c-9 4-16 6-26 4" />
-                    </g>
-                </svg>
+    <section class="story-section" id="about">
 
-                <svg class="doodle doodle--banana" viewBox="0 0 100 85">
-                    <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M10 53c27 12 51 7 66-14 7-9 10-19 13-27 3 33-11 53-31 58-20 5-39-1-48-17Z" />
-                        <path d="M12 54c25 9 53-3 68-28M88 12l7-8m-6 9 5 7M9 53l-5-8" />
-                    </g>
-                </svg>
+      <div class="story-container">
 
-                <svg class="doodle doodle--citrus" viewBox="0 0 115 95">
-                    <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M7 13c-1 40 34 69 88 65C56 78 22 52 7 13Z" />
-                        <path d="M15 24c9 30 28 44 62 48L15 24Zm11 13 12 24M43 51l9 15M18 27l-6 11m67 36 11 3" />
-                    </g>
-                </svg>
+        <!-- Left Image -->
+        <div class="story-visual" data-reveal="left">
 
-                <svg class="doodle doodle--tomato" viewBox="0 0 100 92">
-                    <g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path
-                            d="M47 22c-17-8-29 2-33 14C2 67 21 84 45 81c9-1 12-5 18-4 23 2 34-22 25-40-5-11-20-17-34-13" />
-                        <path
-                            d="M48 23c-8-9-8-17-2-22 12 8 11 14 9 22m-8-2-18-2 12 11 10-8 12 11 3-12-14 3M28 59c-8-2-10-13-1-17 8-4 13 4 12 10m33-12c-7 0-9 8-6 14" />
-                    </g>
-                </svg>
+          <img src="/images/about-shape.png" alt="" class="story-decoration" loading="lazy" aria-hidden="true">
 
-                <svg class="doodle doodle--cherry" viewBox="0 0 105 100">
-                    <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="34" cy="64" r="21" />
-                        <circle cx="69" cy="56" r="20" />
-                        <path
-                            d="M34 43c6-18 23-27 43-31M69 36 77 12M65 14c-11 0-16-5-18-12 10-2 18 1 21 11M19 64l30 1M34 47l0 32M56 56l27 1M69 42v28" />
-                    </g>
-                </svg>
+          <div class="story-image-wrap">
+            <img src="/images/chef.png" alt="Professional chef presenting a freshly prepared meal" class="story-image"
+              width="420" height="520" loading="lazy">
+          </div>
+
+        </div>
+
+        <!-- Right Content -->
+        <div class="story-content" data-reveal="right">
+
+          <span class="story-subtitle">
+            LEARN SOMETHING FOODKING
+          </span>
+
+          <h2 class="story-title">
+            Welcome To Our Culinary Haven, Where Each Dish Is A
+            Symphony Of Flavors Meticulously Crafted To Tantalize
+            Your Taste Buds. Nestled In The Heart Of The City,
+            Our Restaurant Is An Inviting Space That Combines.
+          </h2>
+
+          <div class="story-author">
+
+            <div class="story-author-image">
+              <img src="/images/founder.svg" alt="Restaurant founder portrait" width="54" height="54" loading="lazy">
+            </div>
+
+            <div class="story-author-info">
+              <h3>Michael V. Christensen</h3>
+              <span>/ CEO &amp; Founder</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS SECTION ================= -->
+
+    <section class="products-section" id="shop" aria-labelledby="products-heading">
+
+      <!-- Background Decorations -->
+      <div class="products-decorations" aria-hidden="true">
+
+        <img src="/images/product-shape-1.svg" alt="" class="product-decoration product-decoration--one" loading="lazy">
+
+        <img src="/images/product-shape-2.svg" alt="" class="product-decoration product-decoration--two" loading="lazy">
+
+        <img src="/images/product-shape-3.svg" alt="" class="product-decoration product-decoration--three"
+          loading="lazy">
+
+      </div>
+
+      <div class="products-container">
+
+        <!-- Section Heading -->
+        <div class="products-heading" data-reveal>
+
+          <span class="products-subtitle">
+            Best Selling Dishes
+          </span>
+
+          <h2 id="products-heading">
+            Explore Our Products
+          </h2>
+
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+
+          <!-- Product 01 -->
+          <article class="product-card" data-product-id="burger" data-price="60" data-reveal
+            style="--appear-delay: 0ms">
+
+            <div class="product-card__content">
+
+              <h3>Delicious Burger</h3>
+
+              <div class="product-price">
+                <span>$60.00</span>
+              </div>
 
             </div>
 
-            <div class="container hero__inner">
-
-                <!-- Hero Content -->
-                <div class="hero__content">
-
-                    <h1 class="hero__title" id="hero-title" aria-live="polite">
-                        <span>SUPER</span>
-                        <span>DELICIOUS</span>
-                        <span>PIZZA</span>
-                    </h1>
-
-                    <p class="hero__subtitle">
-                        Star Your Order Just Only $25.00
-                    </p>
-
-                    <button class="order-button" id="order-button" type="button">
-                        Order Now
-
-                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <!-- Slider Navigation -->
-                    <div class="hero__pagination" aria-label="Featured offers">
-
-                        <button class="slide-counter" id="previous-slide" type="button" aria-label="Previous offer">
-                            2
-                        </button>
-
-                        <span class="hero__pagination-line" aria-hidden="true"></span>
-
-                        <button class="slide-total" id="next-slide" type="button" aria-label="Next offer">
-                            / 3
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <!-- Hero Image -->
-                <div class="hero__visual" data-reveal="right">
-
-                    <img class="hero__pizza" src="assets/pizza.png" width="698" height="698"
-                        alt="Freshly baked vegetable pizza with mushrooms, olives, peppers and melted cheese"
-                        fetchpriority="high">
-
-                </div>
-
+            <div class="product-card__visual">
+              <img src="/images/food-burger.png" alt="Delicious burger with crispy chicken and French fries"
+                class="product-card__image" width="300" height="260" loading="lazy">
             </div>
 
-        </section>
-
-    </main>
-
-    <!-- ================= ORDER DIALOG ================= -->
-
-    <dialog class="popup order-popup" id="order-dialog" aria-labelledby="order-dialog-title">
-
-        <form method="dialog">
-            <button class="popup__close" aria-label="Close order dialog" type="submit">
-                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            <button class="product-card__add" type="button" aria-label="Add Delicious Burger to cart">
+              <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
             </button>
-        </form>
 
-        <span class="popup__eyebrow">FRESH FROM OUR OVEN</span>
+          </article>
 
-        <h2 id="order-dialog-title">Make it yours.</h2>
+          <!-- Product 02 -->
+          <article class="product-card" data-product-id="grilled-chicken" data-price="39" data-reveal
+            style="--appear-delay: 80ms">
 
-        <p class="popup__description" id="order-description">
-            Super Delicious Pizza · $25.00 each
+            <div class="product-card__content">
+
+              <h3>Grilled Chicken</h3>
+
+              <div class="product-price">
+                <span class="old-price">$42.00</span>
+                <span>$39.00</span>
+              </div>
+
+            </div>
+
+            <div class="product-card__visual">
+              <img src="/images/food-grilled-chicken.png" alt="Grilled chicken served with creamy sauce"
+                class="product-card__image" width="300" height="260" loading="lazy">
+            </div>
+
+            <button class="product-card__add" type="button" aria-label="Add Grilled Chicken to cart">
+              <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+          </article>
+
+          <!-- Product 03 -->
+          <article class="product-card" data-product-id="chicken-wrap" data-price="26" data-reveal
+            style="--appear-delay: 160ms">
+
+            <div class="product-card__content">
+
+              <h3>Ruti With Chicken</h3>
+
+              <div class="product-price">
+                <span class="old-price">$29.00</span>
+                <span>$26.00</span>
+              </div>
+
+            </div>
+
+            <div class="product-card__visual">
+              <img src="/images/food-chicken-wrap.png" alt="Chicken wraps filled with fresh vegetables"
+                class="product-card__image" width="300" height="260" loading="lazy">
+            </div>
+
+            <button class="product-card__add" type="button" aria-label="Add Ruti With Chicken to cart">
+              <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+          </article>
+
+          <!-- Product 04 -->
+          <article class="product-card" data-product-id="fast-food-combo" data-price="28" data-reveal
+            style="--appear-delay: 240ms">
+
+            <div class="product-card__content">
+
+              <h3>Fast Food Combo</h3>
+
+              <div class="product-price">
+                <span class="old-price">$34.00</span>
+                <span>$28.00</span>
+              </div>
+
+            </div>
+
+            <div class="product-card__visual">
+              <img src="/images/food-combo.png" alt="Fast food combo with burgers, fries and chicken"
+                class="product-card__image" width="300" height="260" loading="lazy">
+            </div>
+
+            <button class="product-card__add" type="button" aria-label="Add Fast Food Combo to cart">
+              <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+          </article>
+
+          <!-- Product 05 -->
+          <article class="product-card" data-product-id="deep-pizza" data-price="22" data-reveal
+            style="--appear-delay: 0ms">
+
+            <div class="product-card__content">
+
+              <h3>Chicago Deep Pizza</h3>
+
+              <div class="product-price">
+                <span class="old-price">$28.00</span>
+                <span>$22.00</span>
+              </div>
+
+            </div>
+
+            <div class="product-card__visual">
+              <img src="/images/food-deep-pizza.png" alt="Chicago deep dish pizza with melted cheese"
+                class="product-card__image" width="300" height="260" loading="lazy">
+            </div>
+
+            <button class="product-card__add" type="button" aria-label="Add Chicago Deep Pizza to cart">
+              <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+          </article>
+
+          <!-- Product 06 -->
+          <article class="product-card" data-product-id="chinese-pasta" data-price="34" data-reveal
+            style="--appear-delay: 80ms">
+
+            <div class="product-card__content">
+
+              <h3>Chinese Pasta</h3>
+
+              <div class="product-price">
+                <span class="old-price">$40.00</span>
+                <span>$34.00</span>
+              </div>
+
+            </div>
+
+            <div class="product-card__visual">
+              <img src="/images/food-pasta.png" alt="Chinese-style pasta with vegetables and sauce"
+                class="product-card__image" width="300" height="260" loading="lazy">
+            </div>
+
+            <button class="product-card__add" type="button" aria-label="Add Chinese Pasta to cart">
+              <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+          </article>
+
+          <!-- Product 07 -->
+          <article class="product-card" data-product-id="whopper-burger" data-price="26" data-reveal
+            style="--appear-delay: 160ms">
+
+            <div class="product-card__content">
+
+              <h3>Whopper Burger King</h3>
+
+              <div class="product-price">
+                <span class="old-price">$30.00</span>
+                <span>$26.00</span>
+              </div>
+
+            </div>
+
+            <div class="product-card__visual">
+              <img src="/images/food-whopper-burger.png" alt="Double beef burger with cheese and vegetables"
+                class="product-card__image" width="300" height="260" loading="lazy">
+            </div>
+
+            <button class="product-card__add" type="button" aria-label="Add Whopper Burger to cart">
+              <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+          </article>
+
+          <!-- Product 08 -->
+          <article class="product-card" data-product-id="beef-wrap" data-price="28.52" data-reveal
+            style="--appear-delay: 240ms">
+
+            <div class="product-card__content">
+
+              <h3>Ruti With Beef Slice</h3>
+
+              <div class="product-price">
+                <span class="old-price">$30.52</span>
+                <span>$28.52</span>
+              </div>
+
+            </div>
+
+            <div class="product-card__visual">
+              <img src="/images/food-beef-wrap.png" alt="Beef wraps served with vegetables and dipping sauce"
+                class="product-card__image" width="300" height="260" loading="lazy">
+            </div>
+
+            <button class="product-card__add" type="button" aria-label="Add Ruti With Beef Slice to cart">
+              <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Cart Drawer -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Cart">
+
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+
+      <button type="button" id="cart-close" aria-label="Close Cart">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+    </div>
+
+    <div class="cart-body">
+      <ion-icon name="basket-outline"></ion-icon>
+      <h3>Your cart is empty</h3>
+      <p>Delicious food is waiting for you!</p>
+    </div>
+
+    <a href="#shop" class="btn cart-shop-btn">
+      Continue Shopping
+    </a>
+
+  </aside>
+<!-- ==================================================
+     SECTION 04 — DEAL OF THE DAY
+     Add after the Products Section, before </main>
+================================================== -->
+
+<section
+  class="deal-section"
+  id="deals"
+  aria-label="Deal of the Day"
+  aria-roledescription="carousel"
+>
+  <!-- Left: Full-Width Food Image -->
+  <div class="deal-visual">
+    <img
+      src="/images/deal-1.jpg"
+      alt="Delicious grilled barbecue platter served with golden fries and fresh vegetables"
+      class="deal-image"
+      id="deal-image"
+      width="1400"
+      height="900"
+      loading="lazy"
+    >
+  </div>
+
+  <!-- Right: Yellow Promotional Panel -->
+  <div class="deal-panel">
+
+    <div class="deal-content">
+
+      <!-- Subtitle -->
+      <span class="deal-subtitle">
+        Deal Of The Day
+      </span>
+
+      <!-- Heading -->
+      <h2 class="deal-title" id="deal-title">
+        <span>TODAY’S The</span>
+        <span>Hamburger’ DAY</span>
+      </h2>
+
+      <!-- Special Price -->
+      <div class="deal-price">
+        <span class="deal-price-label">
+          Special Price
+        </span>
+
+        <span class="deal-price-value" id="deal-price">
+          $55
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="deal-description" id="deal-description">
+        Savor the perfect symphony of flavors. Experience
+        quick and efficient dining with our signature
+        hamburger, freshly prepared to delight your taste buds.
+      </p>
+
+      <!-- Order Button -->
+      <a
+        href="#shop"
+        class="deal-order-btn"
+        id="deal-order-btn"
+        aria-label="Explore our menu and order now"
+      >
+        <span class="deal-order-icon">
+          <ion-icon
+            name="car-sport-outline"
+            aria-hidden="true"
+          ></ion-icon>
+        </span>
+
+        <span class="deal-order-text">
+          Order Now
+        </span>
+
+        <ion-icon
+          name="arrow-forward-outline"
+          class="deal-order-arrow"
+          aria-hidden="true"
+        ></ion-icon>
+      </a>
+
+    </div>
+
+    <!-- Slider Navigation -->
+    <div
+      class="deal-slider-controls"
+      aria-label="Deal slider controls"
+    >
+
+      <!-- Next -->
+      <button
+        class="deal-slider-btn deal-slider-next"
+        id="deal-next"
+        type="button"
+        aria-label="Next deal"
+      >
+        <ion-icon
+          name="arrow-forward-outline"
+          aria-hidden="true"
+        ></ion-icon>
+      </button>
+
+      <!-- Previous -->
+      <button
+        class="deal-slider-btn deal-slider-prev"
+        id="deal-prev"
+        type="button"
+        aria-label="Previous deal"
+      >
+        <ion-icon
+          name="arrow-back-outline"
+          aria-hidden="true"
+        ></ion-icon>
+      </button>
+
+    </div>
+
+    <!-- Accessible Slider Announcement -->
+    <p
+      class="deal-screen-reader"
+      id="deal-status"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    ></p>
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     SECTION 05 — FEATURED FOOD CATEGORIES
+================================================== -->
+
+<section
+  class="food-feature-section"
+  id="food-categories"
+  aria-label="Featured Food Categories"
+>
+  <div class="container food-feature-container">
+
+    <div class="food-feature-grid">
+
+      <!-- Category 01 -->
+      <article
+        class="food-feature-card"
+        data-food-reveal
+        style="--feature-delay: 0ms"
+      >
+        <div class="food-feature-image">
+          <img
+            src="/images/feature-pizza.png"
+            alt="Delicious classic Italian pizza"
+            width="170"
+            height="170"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="food-feature-content">
+          <h3>
+            Delicious Classic
+            Italian Pizza
+          </h3>
+
+          <a
+            href="#shop"
+            class="food-feature-link"
+            aria-label="Order classic Italian pizza"
+          >
+            <span>Order Now</span>
+            <ion-icon
+              name="arrow-forward-outline"
+              aria-hidden="true"
+            ></ion-icon>
+          </a>
+        </div>
+
+        <span class="food-feature-ghost" aria-hidden="true">
+          Pizza
+        </span>
+      </article>
+
+      <!-- Category 02 -->
+      <article
+        class="food-feature-card"
+        data-food-reveal
+        style="--feature-delay: 100ms"
+      >
+        <div class="food-feature-image">
+          <img
+            src="/images/feature-burger.png"
+            alt="Tasty vegetable hamburger with fresh lettuce"
+            width="170"
+            height="170"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="food-feature-content">
+          <h3>
+            Tasty Vegetable
+            Hamburger
+          </h3>
+
+          <a
+            href="#shop"
+            class="food-feature-link"
+            aria-label="Order vegetable hamburger"
+          >
+            <span>Order Now</span>
+            <ion-icon
+              name="arrow-forward-outline"
+              aria-hidden="true"
+            ></ion-icon>
+          </a>
+        </div>
+
+        <span class="food-feature-ghost" aria-hidden="true">
+          Hamburger
+        </span>
+      </article>
+
+      <!-- Category 03 -->
+      <article
+        class="food-feature-card"
+        data-food-reveal
+        style="--feature-delay: 200ms"
+      >
+        <div class="food-feature-image">
+          <img
+            src="/images/feature-drumsticks.png"
+            alt="Roasted chicken drumsticks with herbs and vegetables"
+            width="170"
+            height="170"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="food-feature-content">
+          <h3>
+            Roasted Chicken
+            Drumsticks Italian
+            Pizza
+          </h3>
+
+          <a
+            href="#shop"
+            class="food-feature-link"
+            aria-label="Order roasted chicken drumsticks"
+          >
+            <span>Order Now</span>
+            <ion-icon
+              name="arrow-forward-outline"
+              aria-hidden="true"
+            ></ion-icon>
+          </a>
+        </div>
+
+        <span class="food-feature-ghost" aria-hidden="true">
+          Drumsticks
+        </span>
+      </article>
+
+      <!-- Category 04 -->
+      <article
+        class="food-feature-card"
+        data-food-reveal
+        style="--feature-delay: 300ms"
+      >
+        <div class="food-feature-image">
+          <img
+            src="/images/feature-samosa.png"
+            alt="Golden crispy cigar samosas with dipping sauce"
+            width="170"
+            height="170"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="food-feature-content">
+          <h3>
+            Roll Shaped Cigar
+            Samosa
+          </h3>
+
+          <a
+            href="#shop"
+            class="food-feature-link"
+            aria-label="Order crispy cigar samosas"
+          >
+            <span>Order Now</span>
+            <ion-icon
+              name="arrow-forward-outline"
+              aria-hidden="true"
+            ></ion-icon>
+          </a>
+        </div>
+
+        <span class="food-feature-ghost" aria-hidden="true">
+          Samosa
+        </span>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==================================================
+     SECTION 06 — INFINITE TESTIMONIALS MARQUEE
+================================================== -->
+
+<section
+  class="reviews-marquee-section"
+  id="testimonials"
+  aria-labelledby="reviews-marquee-heading"
+>
+  <h2
+    class="reviews-marquee-sr-only"
+    id="reviews-marquee-heading"
+  >
+    Clients Testimonials and Food Reviews
+  </h2>
+
+  <div
+    class="reviews-marquee"
+    aria-hidden="true"
+  >
+    <div class="reviews-marquee-track">
+
+      <!-- First Text Group -->
+      <div class="reviews-marquee-group">
+
+        <span class="reviews-marquee-text">
+          Clients Testimonials
+        </span>
+
+        <span class="reviews-marquee-star">☆</span>
+
+        <span class="reviews-marquee-text">
+          Food Reviews
+        </span>
+
+      </div>
+
+      <!-- Duplicate Group For Seamless Infinite Loop -->
+      <div class="reviews-marquee-group">
+
+        <span class="reviews-marquee-text">
+          Clients Testimonials
+        </span>
+
+        <span class="reviews-marquee-star">☆</span>
+
+        <span class="reviews-marquee-text">
+          Food Reviews
+        </span>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ==================================================
+     SECTION 07 — CUSTOMER TESTIMONIALS
+     Add after the Infinite Text Marquee Section
+================================================== -->
+
+<section
+  class="customer-review"
+  id="customer-reviews"
+  aria-labelledby="customer-review-heading"
+  aria-roledescription="carousel"
+>
+  <!-- Decorative Images -->
+  <div class="customer-review__decorations" aria-hidden="true">
+
+    <img
+      src="/images/review-burger-shape.svg"
+      alt=""
+      class="customer-review__shape customer-review__shape--burger"
+      loading="lazy"
+      width="150"
+      height="150"
+    >
+
+    <img
+      src="/images/review-fries-shape.svg"
+      alt=""
+      class="customer-review__shape customer-review__shape--fries"
+      loading="lazy"
+      width="110"
+      height="120"
+    >
+
+    <img
+      src="/images/review-pizza-shape.svg"
+      alt=""
+      class="customer-review__shape customer-review__shape--pizza"
+      loading="lazy"
+      width="120"
+      height="120"
+    >
+
+  </div>
+
+  <div class="container customer-review__container">
+
+    <div class="customer-review__inner">
+
+      <!-- Customer Information -->
+      <div class="customer-review__information">
+
+        <h2
+          class="customer-review__name"
+          id="customer-review-heading"
+        >
+          Piter Bowman
+        </h2>
+
+        <p
+          class="customer-review__designation"
+          id="customer-review-designation"
+        >
+          Business CEO &amp; Co Founder
         </p>
 
-        <div class="quantity-picker">
+      </div>
 
-            <button id="quantity-minus" type="button" aria-label="Decrease quantity">−</button>
+      <!-- Testimonial Content -->
+      <blockquote class="customer-review__quote">
 
-            <output id="quantity-value" aria-live="polite">1</output>
-
-            <button id="quantity-plus" type="button" aria-label="Increase quantity">+</button>
-
-        </div>
-
-        <button class="popup__primary" id="add-to-cart" type="button">
-            Add to basket · $25.00
-        </button>
-
-    </dialog>
-
-    <!-- ================= CART DIALOG ================= -->
-
-    <dialog class="popup cart-popup" id="cart-dialog" aria-labelledby="cart-dialog-title">
-
-        <form method="dialog">
-            <button class="popup__close" aria-label="Close basket" type="submit">
-                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-            </button>
-        </form>
-
-        <span class="popup__eyebrow">YOUR ORDER</span>
-
-        <h2 id="cart-dialog-title">Your basket</h2>
-
-        <div id="cart-items" class="cart-items" aria-live="polite"></div>
-
-        <div class="cart-footer">
-            <span>Subtotal</span>
-            <strong id="cart-subtotal">$0.00</strong>
-        </div>
-
-        <button class="popup__primary" id="continue-shopping" type="button">
-            Continue shopping
-        </button>
-
-    </dialog>
-
-    <!-- ================= CONTACT DIALOG ================= -->
-
-    <dialog class="popup contact-popup" id="contact-dialog" aria-labelledby="contact-dialog-title">
-
-        <form method="dialog">
-            <button class="popup__close" aria-label="Close contact dialog" type="submit">
-                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-            </button>
-        </form>
-
-        <span class="popup__eyebrow">GET IN TOUCH</span>
-
-        <h2 id="contact-dialog-title">Say hello.</h2>
-
-        <p class="popup__description">
-            Have a question? The contact form will be available
-            when the website's backend is connected.
+        <p id="customer-review-text">
+          “Thank You For Dinner Last Night. It Was Amazing!!
+          I Have Say It’s The Best Meal I Have Had In Quite
+          Some Time. Will Definitely Be Seeing More Eating
+          Next Year.”
         </p>
 
-        <button class="popup__primary" id="close-contact" type="button">
-            Got it
+      </blockquote>
+
+      <!-- Star Rating -->
+      <div
+        class="customer-review__rating"
+        role="img"
+        aria-label="5 out of 5 stars"
+      >
+        <span aria-hidden="true">★★★★★</span>
+      </div>
+
+      <!-- Customer Avatar Slider -->
+      <div
+        class="customer-review__navigation"
+        aria-label="Choose a customer review"
+      >
+
+        <!-- Previous Customer -->
+        <button
+          class="customer-review__avatar customer-review__avatar--side"
+          type="button"
+          data-review-slot="previous"
+          aria-label="View previous customer review"
+          aria-pressed="false"
+        >
+          <img
+            src="/images/review-client-1.png"
+            alt=""
+            width="76"
+            height="76"
+            loading="lazy"
+          >
         </button>
 
-    </dialog>
+        <!-- Active Customer -->
+        <button
+          class="customer-review__avatar customer-review__avatar--active"
+          type="button"
+          data-review-slot="active"
+          aria-label="Current customer review: Piter Bowman"
+          aria-pressed="true"
+        >
+          <img
+            src="/images/review-client-2.png"
+            alt=""
+            width="84"
+            height="84"
+            loading="lazy"
+          >
+        </button>
 
-    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+        <!-- Next Customer -->
+        <button
+          class="customer-review__avatar customer-review__avatar--side"
+          type="button"
+          data-review-slot="next"
+          aria-label="View next customer review"
+          aria-pressed="false"
+        >
+          <img
+            src="/images/review-client-3.jpg"
+            alt=""
+            width="76"
+            height="76"
+            loading="lazy"
+          >
+        </button>
 
+      </div>
+
+      <!-- Accessible Slide Status -->
+      <p
+        class="customer-review__status"
+        id="customer-review-status"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
+
+    </div>
+
+  </div>
+
+</section>
 </body>
 
 </html>
