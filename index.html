@@ -653,8 +653,293 @@
     </section>
     <!-- ==========================
         NEWSLETTER SECTION END
+    ============================ -->
+
+
+    <!-- ==========================
+        FOOD GALLERY SECTION START
+    ============================ -->
+    <section class="tn-gallery" id="gallery" aria-label="TasteNest Food Gallery">
+      <div class="tn-gallery__track">
+
+        <button class="tn-gallery__item" type="button" data-gallery-index="0" aria-label="View delicious pasta">
+          <img src="/images/gallery-1.png" alt="Delicious pasta with vegetables and herbs" width="500" height="450"
+            loading="lazy">
+
+          <span class="tn-gallery__overlay" aria-hidden="true">
+            <ion-icon name="expand-outline"></ion-icon>
+          </span>
+        </button>
+
+        <button class="tn-gallery__item" type="button" data-gallery-index="1"
+          aria-label="View freshly prepared cheeseburger">
+          <img src="/images/gallery-2.png" alt="Juicy cheeseburger served with French fries" width="500" height="450"
+            loading="lazy">
+
+          <span class="tn-gallery__overlay" aria-hidden="true">
+            <ion-icon name="expand-outline"></ion-icon>
+          </span>
+        </button>
+
+        <button class="tn-gallery__item" type="button" data-gallery-index="2"
+          aria-label="View fresh crispy chicken salad">
+          <img src="/images/gallery-3.png" alt="Fresh chicken salad with vegetables and creamy dressing" width="500"
+            height="450" loading="lazy">
+
+          <span class="tn-gallery__overlay" aria-hidden="true">
+            <ion-icon name="expand-outline"></ion-icon>
+          </span>
+        </button>
+
+        <button class="tn-gallery__item" type="button" data-gallery-index="3" aria-label="View classic hamburger meal">
+          <img src="/images/gallery-4.png" alt="Classic hamburger with cherry tomato and golden fries" width="500"
+            height="450" loading="lazy">
+
+          <span class="tn-gallery__overlay" aria-hidden="true">
+            <ion-icon name="expand-outline"></ion-icon>
+          </span>
+        </button>
+
+        <button class="tn-gallery__item" type="button" data-gallery-index="4" aria-label="View crispy chicken burger">
+          <img src="/images/gallery-5.png" alt="Crispy chicken burger with cheese and fresh lettuce" width="500"
+            height="450" loading="lazy">
+
+          <span class="tn-gallery__overlay" aria-hidden="true">
+            <ion-icon name="expand-outline"></ion-icon>
+          </span>
+        </button>
+
+      </div>
+
+      <dialog class="tn-gallery__lightbox" id="tn-gallery-lightbox" aria-label="Food gallery image viewer">
+        <button class="tn-gallery__close" type="button" aria-label="Close gallery">
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="tn-gallery__arrow tn-gallery__arrow--prev" type="button" aria-label="Previous image">
+          <ion-icon name="arrow-back-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <img class="tn-gallery__lightbox-image" src="/images/gallery-1.png" alt="" width="1000" height="800">
+
+        <button class="tn-gallery__arrow tn-gallery__arrow--next" type="button" aria-label="Next image">
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="tn-gallery__counter" aria-live="polite">
+          <span id="tn-gallery-current">01</span>
+          /
+          <span id="tn-gallery-total">05</span>
+        </div>
+
+      </dialog>
+
+    </section>
+    <!-- ==========================
+        FOOD GALLERY SECTION END
       ============================ -->
   </main>
+  <!-- ==========================
+    FOOTER SECTION START
+  ============================ -->
+  <footer class="tn-footer" id="contact">
+
+    <div class="tn-footer__decorations" aria-hidden="true">
+
+      <img src="/images/footer-shape-left.png" alt="" class="tn-footer__shape tn-footer__shape--left" loading="lazy">
+
+      <img src="/images/footer-shape-right.png" alt="" class="tn-footer__shape tn-footer__shape--right" loading="lazy">
+
+    </div>
+
+    <div class="container tn-footer__container">
+
+      <div class="tn-footer__top">
+
+        <div class="tn-footer__brand-card" data-reveal>
+
+          <a href="#home" class="tn-footer__logo" aria-label="TasteNest Homepage">
+            <img src="/images/logo.svg" alt="TasteNest Restaurant" width="160" height="75" loading="lazy">
+          </a>
+
+          <div class="tn-footer__opening">
+
+            <p>
+              Tuesday – Saturday:
+              <span>12:00pm – 11:00pm</span>
+            </p>
+
+            <p class="tn-footer__closed">
+              Closed on Sunday
+            </p>
+
+          </div>
+
+          <p class="tn-footer__brand-bottom">
+            Fresh Food. Bold Flavor. Made With Love.
+          </p>
+
+        </div>
+
+        <nav class="tn-footer__column" aria-label="Footer About Navigation" data-reveal>
+          <h2 class="tn-footer__heading">
+            About
+          </h2>
+
+          <ul class="tn-footer__links">
+
+            <li>
+              <a href="#about">
+                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                Our Story
+              </a>
+            </li>
+
+            <li>
+              <a href="#deals">
+                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                Daily Deals
+              </a>
+            </li>
+
+            <li>
+              <a href="#customer-reviews">
+                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                Testimonials
+              </a>
+            </li>
+
+            <li>
+              <a href="#blog">
+                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                News &amp; Blog
+              </a>
+            </li>
+
+            <li>
+              <a href="#newsletter">
+                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                Newsletter
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <nav class="tn-footer__column" aria-label="Footer Menu Navigation" data-reveal>
+          <h2 class="tn-footer__heading">
+            Menu
+          </h2>
+
+          <ul class="tn-footer__links">
+
+            <li>
+              <a href="#shop">
+                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                All Products
+              </a>
+            </li>
+
+            <li>
+              <a href="#food-categories">
+                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                Food Favorites
+              </a>
+            </li>
+
+            <li>
+              <a href="#shop">
+                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                Burgers
+              </a>
+            </li>
+
+            <li>
+              <a href="#shop">
+                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                Pizza
+              </a>
+            </li>
+
+            <li>
+              <a href="#deals">
+                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                Special Offers
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <div class="tn-footer__column tn-footer__subscribe" data-reveal>
+
+          <h2 class="tn-footer__heading">
+            Newsletter
+          </h2>
+
+          <p class="tn-footer__subscribe-text">
+            Get recent news and updates.
+          </p>
+
+          <form class="tn-subscribe-form tn-footer__form" id="tn-footer-newsletter-form" data-endpoint="">
+
+            <label for="tn-footer-email" class="tn-footer__sr-only">
+              Your Email Address
+            </label>
+
+            <input type="email" id="tn-footer-email" name="email" placeholder="Email Address" autocomplete="email"
+              required>
+
+            <button class="tn-footer__subscribe-button" type="submit">
+              Subscribe
+            </button>
+
+            <p class="tn-footer__feedback" data-newsletter-status role="status" aria-live="polite"></p>
+
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="tn-footer__bottom">
+
+        <div class="tn-footer__copyright">
+
+          <span>
+            © <span id="tn-footer-year">2026</span>
+            TasteNest
+          </span>
+
+          <span class="tn-footer__separator">|</span>
+
+          <span>
+            All Rights Reserved.
+          </span>
+
+        </div>
+
+        <div class="tn-footer__socials">
+
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Facebook">
+            Facebook
+          </a>
+
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram">
+            Instagram
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+  <!-- ==========================
+    FOOTER SECTION END
+  ============================ -->
+
 
   <!-- ==========================
         CART SECTION START
@@ -676,90 +961,6 @@
   </aside>
   <!-- ==========================
         CART SECTION END
-    ============================ -->
-
-
-  <!-- ==========================
-      FOOD GALLERY SECTION START
-  ============================ -->
-  <section class="tn-gallery" id="gallery" aria-label="TasteNest Food Gallery">
-    <div class="tn-gallery__track">
-
-      <button class="tn-gallery__item" type="button" data-gallery-index="0" aria-label="View delicious pasta">
-        <img src="/images/gallery-1.png" alt="Delicious pasta with vegetables and herbs" width="500" height="450"
-          loading="lazy">
-
-        <span class="tn-gallery__overlay" aria-hidden="true">
-          <ion-icon name="expand-outline"></ion-icon>
-        </span>
-      </button>
-
-      <button class="tn-gallery__item" type="button" data-gallery-index="1"
-        aria-label="View freshly prepared cheeseburger">
-        <img src="/images/gallery-2.png" alt="Juicy cheeseburger served with French fries" width="500" height="450"
-          loading="lazy">
-
-        <span class="tn-gallery__overlay" aria-hidden="true">
-          <ion-icon name="expand-outline"></ion-icon>
-        </span>
-      </button>
-
-      <button class="tn-gallery__item" type="button" data-gallery-index="2"
-        aria-label="View fresh crispy chicken salad">
-        <img src="/images/gallery-3.png" alt="Fresh chicken salad with vegetables and creamy dressing" width="500"
-          height="450" loading="lazy">
-
-        <span class="tn-gallery__overlay" aria-hidden="true">
-          <ion-icon name="expand-outline"></ion-icon>
-        </span>
-      </button>
-
-      <button class="tn-gallery__item" type="button" data-gallery-index="3" aria-label="View classic hamburger meal">
-        <img src="/images/gallery-4.png" alt="Classic hamburger with cherry tomato and golden fries" width="500"
-          height="450" loading="lazy">
-
-        <span class="tn-gallery__overlay" aria-hidden="true">
-          <ion-icon name="expand-outline"></ion-icon>
-        </span>
-      </button>
-
-      <button class="tn-gallery__item" type="button" data-gallery-index="4" aria-label="View crispy chicken burger">
-        <img src="/images/gallery-5.png" alt="Crispy chicken burger with cheese and fresh lettuce" width="500"
-          height="450" loading="lazy">
-
-        <span class="tn-gallery__overlay" aria-hidden="true">
-          <ion-icon name="expand-outline"></ion-icon>
-        </span>
-      </button>
-
-    </div>
-
-    <dialog class="tn-gallery__lightbox" id="tn-gallery-lightbox" aria-label="Food gallery image viewer">
-      <button class="tn-gallery__close" type="button" aria-label="Close gallery">
-        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-      </button>
-
-      <button class="tn-gallery__arrow tn-gallery__arrow--prev" type="button" aria-label="Previous image">
-        <ion-icon name="arrow-back-outline" aria-hidden="true"></ion-icon>
-      </button>
-
-      <img class="tn-gallery__lightbox-image" src="/images/gallery-1.png" alt="" width="1000" height="800">
-
-      <button class="tn-gallery__arrow tn-gallery__arrow--next" type="button" aria-label="Next image">
-        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-      </button>
-
-      <div class="tn-gallery__counter" aria-live="polite">
-        <span id="tn-gallery-current">01</span>
-        /
-        <span id="tn-gallery-total">05</span>
-      </div>
-
-    </dialog>
-
-  </section>
-  <!-- ==========================
-      FOOD GALLERY SECTION END
     ============================ -->
 </body>
 
