@@ -545,6 +545,180 @@
       <!-- ==========================
           NEWS & BLOG SECTION END
       ============================ -->
+
+
+      <!-- ==========================
+        NEWSLETTER SECTION START
+      ============================ -->
+      <section
+        class="tn-newsletter"
+        id="newsletter"
+        aria-labelledby="tn-newsletter-heading"
+      >
+        <div class="container tn-newsletter__container">
+
+          <div class="tn-newsletter__banner" data-reveal>
+
+            <div class="tn-newsletter__decorations" aria-hidden="true">
+
+              <img
+                src="/images/newsletter-fries.png"
+                alt=""
+                class="tn-newsletter__shape tn-newsletter__shape--fries"
+                loading="lazy"
+              >
+
+              <img
+                src="/images/newsletter-candy.png"
+                alt=""
+                class="tn-newsletter__shape tn-newsletter__shape--candy"
+                loading="lazy"
+              >
+
+              <img
+                src="/images/newsletter-cupcake.png"
+                alt=""
+                class="tn-newsletter__shape tn-newsletter__shape--cupcake"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="tn-newsletter__grid">
+
+              <div class="tn-newsletter__content">
+
+                <h2
+                  class="tn-newsletter__title"
+                  id="tn-newsletter-heading"
+                >
+                  Subscribe Our Newsletter
+                  <br>
+                  To Get More Offers
+                </h2>
+
+                <p class="tn-newsletter__description">
+                  Get the latest TasteNest news, exclusive food offers,
+                  seasonal specials, and delicious updates delivered
+                  straight to your inbox.
+                </p>
+
+              </div>
+
+              <div class="tn-newsletter__form-wrapper">
+
+                <form
+                  class="tn-subscribe-form tn-newsletter__form"
+                  id="tn-newsletter-form"
+                  data-endpoint=""
+                >
+
+                  <label
+                    class="tn-newsletter__sr-only"
+                    for="tn-newsletter-email"
+                  >
+                    Email Address
+                  </label>
+
+                  <div class="tn-newsletter__input-group">
+
+                    <ion-icon
+                      name="mail"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <input
+                      type="email"
+                      id="tn-newsletter-email"
+                      name="email"
+                      placeholder="Enter Email Address"
+                      autocomplete="email"
+                      required
+                    >
+
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="tn-newsletter__button"
+                  >
+                    <span>Subscribe Now</span>
+                  </button>
+
+                  <label class="tn-newsletter__privacy">
+
+                    <input
+                      type="checkbox"
+                      name="consent"
+                      required
+                    >
+
+                    <span>
+                      I Agree To The
+                      <button
+                        type="button"
+                        class="tn-newsletter__privacy-link"
+                        data-tn-open-privacy
+                      >
+                        Privacy Policy
+                      </button>.
+                    </span>
+
+                  </label>
+
+                  <p
+                    class="tn-newsletter__feedback"
+                    data-newsletter-status
+                    role="status"
+                    aria-live="polite"
+                  ></p>
+
+                </form>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <dialog
+          class="tn-privacy-dialog"
+          id="tn-privacy-dialog"
+          aria-labelledby="tn-privacy-title"
+        >
+          <button
+            type="button"
+            class="tn-privacy-dialog__close"
+            aria-label="Close privacy information"
+          >
+            <ion-icon
+              name="close-outline"
+              aria-hidden="true"
+            ></ion-icon>
+          </button>
+
+          <h2 id="tn-privacy-title">Newsletter Privacy</h2>
+
+          <p>
+            This is a demonstration newsletter form. No email address
+            is transmitted until a subscription service is connected.
+            A complete privacy policy must be provided before launch.
+          </p>
+
+          <button
+            type="button"
+            class="tn-privacy-dialog__button"
+          >
+            Got It
+          </button>
+        </dialog>
+
+      </section>
+      <!-- ==========================
+        NEWSLETTER SECTION END
+      ============================ -->
     </main>
 
     <!-- ==========================
@@ -568,6 +742,8 @@
     <!-- ==========================
         CART SECTION END
     ============================ -->
+
+
   </body>
 
 </html>

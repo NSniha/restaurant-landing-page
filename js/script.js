@@ -1537,3 +1537,114 @@ startAutoplay();
 /* ==========================
    NEWS & BLOG SECTION END
 ============================ */
+
+
+
+/* ==========================
+   NEWSLETTER SECTION START
+============================ */
+
+(() => {
+  "use strict";
+
+  const forms = document.querySelectorAll(".tn-subscribe-form");
+
+  const privacyDialog = document.querySelector(
+    "#tn-privacy-dialog"
+  );
+
+  document.querySelectorAll(
+    "[data-tn-open-privacy]"
+  ).forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      privacyDialog?.showModal();
+    });
+  });
+
+  privacyDialog?.querySelector(
+    ".tn-privacy-dialog__close"
+  )?.addEventListener("click", () => {
+    privacyDialog.close();
+  });
+
+  privacyDialog?.querySelector(
+    ".tn-privacy-dialog__button"
+  )?.addEventListener("click", () => {
+    privacyDialog.close();
+  });
+
+  privacyDialog?.addEventListener("click", (event) => {
+    if (event.target === privacyDialog) {
+      privacyDialog.close();
+    }
+  });
+
+  forms.forEach((form) => {
+    const input = form.querySelector('input[type="email"]');
+
+    const status = form.querySelector(
+      "[data-newsletter-status]"
+    );
+
+    const button = form.querySelector('button[type="submit"]');
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      if (!form.reportValidity()) return;
+
+      const email = input.value.trim();
+
+      const endpoint = form.dataset.endpoint?.trim();
+
+      if (!endpoint) {
+        status.textContent =
+          "Newsletter signup is not active yet. Please connect a subscription service.";
+
+        return;
+      }
+
+      const originalText = button.textContent;
+
+      button.disabled = true;
+      button.textContent = "Subscribing...";
+
+      status.textContent = "";
+
+      try {
+        const response = await fetch(endpoint, {
+          method: "POST",
+
+          headers: {
+            "Content-Type": "application/json",
+          },
+
+          body: JSON.stringify({
+            email,
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error("Subscription failed");
+        }
+
+        status.textContent =
+          "Thank you! Your subscription request was received.";
+
+        form.reset();
+      } catch (error) {
+        status.textContent =
+          "Unable to subscribe right now. Please try again.";
+      } finally {
+        button.disabled = false;
+        button.textContent = originalText;
+      }
+    });
+  });
+})();
+
+/* ==========================
+   NEWSLETTER SECTION END
+============================ */
