@@ -1780,3 +1780,57 @@ startAutoplay();
 /* ==========================
    FOOD GALLERY SECTION END
 ============================ */
+
+
+/* ==========================
+   FOOTER SECTION START
+============================ */
+
+(() => {
+  "use strict";
+
+  const footer = document.querySelector(".tn-footer");
+
+  if (!footer) return;
+
+  const yearElement = footer.querySelector("#tn-footer-year");
+
+  if (yearElement) {
+    yearElement.textContent = String(
+      new Date().getFullYear()
+    );
+  }
+
+  const footerLinks = footer.querySelectorAll(
+    'a[href^="#"]'
+  );
+
+  footerLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetId = link.getAttribute("href");
+
+      if (!targetId || targetId === "#") return;
+
+      const target = document.querySelector(targetId);
+
+      if (!target) return;
+
+      event.preventDefault();
+
+      const reducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      target.scrollIntoView({
+        behavior: reducedMotion ? "auto" : "smooth",
+        block: "start",
+      });
+
+      history.replaceState(null, "", targetId);
+    });
+  });
+})();
+
+/* ==========================
+   FOOTER SECTION END
+============================ */
