@@ -1,681 +1,628 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-      content="TasteNest serves juicy burgers, crispy chicken, cheesy pizza, wraps and more. Explore fresh favorites, daily deals and our latest food stories.">
-    <meta name="theme-color" content="#d32228">
-    <title>TasteNest | Fresh Food, Bold Flavor & Everyday Favorites</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="TasteNest serves juicy burgers, crispy chicken, cheesy pizza, wraps and more. Explore fresh favorites, daily deals and our latest food stories.">
+  <meta name="theme-color" content="#d32228">
+  <title>TasteNest | Fresh Food, Bold Flavor & Everyday Favorites</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
-    <script src="/js/script.js" defer></script>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  <script src="/js/script.js" defer></script>
+</head>
 
-  <body>
-    <div class="scroll-progress" aria-hidden="true"></div>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
 
-    <!-- ==========================
+  <!-- ==========================
         HEADER SECTION START
     ============================ -->
-    <header class="header" id="header">
-      <div class="container header-container">
-        <a href="#home" class="logo" aria-label="TasteNest — go to homepage">
-          <img src="/images/logo.svg" alt="TasteNest restaurant logo" width="160" height="75">
-        </a>
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#home" class="logo" aria-label="TasteNest — go to homepage">
+        <img src="/images/logo.svg" alt="TasteNest restaurant logo" width="160" height="75">
+      </a>
 
-        <nav class="navbar" id="navbar" aria-label="Main navigation">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">Our Story</a></li>
-            <li class="nav-item"><a href="#shop" class="nav-link">Our Menu</a></li>
-            <li class="nav-item"><a href="#deals" class="nav-link">Daily Deals</a></li>
-            <li class="nav-item"><a href="#food-categories" class="nav-link">Favorites</a></li>
-            <li class="nav-item"><a href="#customer-reviews" class="nav-link">Reviews</a></li>
-            <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
-          </ul>
-        </nav>
+      <nav class="navbar" id="navbar" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Our Story</a></li>
+          <li class="nav-item"><a href="#shop" class="nav-link">Our Menu</a></li>
+          <li class="nav-item"><a href="#deals" class="nav-link">Daily Deals</a></li>
+          <li class="nav-item"><a href="#food-categories" class="nav-link">Favorites</a></li>
+          <li class="nav-item"><a href="#customer-reviews" class="nav-link">Reviews</a></li>
+          <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+        </ul>
+      </nav>
 
-        <div class="header-actions">
-          <button class="cart-btn" id="cart-btn" type="button" aria-label="Open shopping cart"
-            aria-controls="cart-drawer">
-            <ion-icon name="basket-outline" aria-hidden="true"></ion-icon>
-            <span class="cart-count" id="cart-count">0</span>
-          </button>
-          <a href="#shop" class="btn btn-contact"><span>Order Online</span></a>
-          <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu"
-            aria-expanded="false" aria-controls="navbar">
-            <ion-icon name="menu-outline" class="menu-open" aria-hidden="true"></ion-icon>
-            <ion-icon name="close-outline" class="menu-close" aria-hidden="true"></ion-icon>
-          </button>
-        </div>
+      <div class="header-actions">
+        <button class="cart-btn" id="cart-btn" type="button" aria-label="Open shopping cart"
+          aria-controls="cart-drawer">
+          <ion-icon name="basket-outline" aria-hidden="true"></ion-icon>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <a href="#shop" class="btn btn-contact"><span>Order Online</span></a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu"
+          aria-expanded="false" aria-controls="navbar">
+          <ion-icon name="menu-outline" class="menu-open" aria-hidden="true"></ion-icon>
+          <ion-icon name="close-outline" class="menu-close" aria-hidden="true"></ion-icon>
+        </button>
       </div>
-    </header>
-    <!-- ==========================
+    </div>
+  </header>
+  <!-- ==========================
         HEADER SECTION END
     ============================ -->
 
-    <main>
-      <!-- ==========================
+  <main>
+    <!-- ==========================
           HERO SECTION START
       ============================ -->
-      <section class="hero" id="home" aria-labelledby="hero-title">
-        <div class="hero-overlay" aria-hidden="true"></div>
-        <div class="container hero-container">
-          <div class="hero-content">
-            <div class="hero-text" id="hero-text">
-              <h1 class="hero-title" id="hero-title">
-                <span>DOUBLE</span>
-                <span>CHEESE</span>
-                <span>BURGER</span>
-              </h1>
-              <p class="hero-description" id="hero-description">Double the cheese, double the flavor — only $25.00</p>
-              <a href="#shop" class="btn btn-order" id="order-btn">
-                <span>Order Now</span>
-                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-              </a>
-            </div>
-
-            <div class="hero-slider-controls" aria-label="Featured food slider controls">
-              <button class="slider-arrow slider-prev" id="slider-prev" type="button" aria-label="Previous featured dish">
-                <ion-icon name="arrow-back-outline" aria-hidden="true"></ion-icon>
-              </button>
-              <span class="current-slide" id="current-slide">02</span>
-              <div class="slider-progress" id="slider-progress" aria-hidden="true"><span
-                  class="slider-progress-bar"></span></div>
-              <span class="total-slide">/ 03</span>
-              <button class="slider-arrow slider-next" id="slider-next" type="button" aria-label="Next featured dish">
-                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-              </button>
-            </div>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-text" id="hero-text">
+            <h1 class="hero-title" id="hero-title">
+              <span>DOUBLE</span>
+              <span>CHEESE</span>
+              <span>BURGER</span>
+            </h1>
+            <p class="hero-description" id="hero-description">Double the cheese, double the flavor — only $25.00</p>
+            <a href="#shop" class="btn btn-order" id="order-btn">
+              <span>Order Now</span>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
           </div>
 
-          <div class="hero-image-wrapper" id="hero-image-wrapper">
-            <img src="/images/pizza.png" alt="Juicy double cheeseburger with lettuce, tomato and sauce" class="hero-image"
-              id="hero-image" width="750" height="750" fetchpriority="high">
+          <div class="hero-slider-controls" aria-label="Featured food slider controls">
+            <button class="slider-arrow slider-prev" id="slider-prev" type="button" aria-label="Previous featured dish">
+              <ion-icon name="arrow-back-outline" aria-hidden="true"></ion-icon>
+            </button>
+            <span class="current-slide" id="current-slide">02</span>
+            <div class="slider-progress" id="slider-progress" aria-hidden="true"><span
+                class="slider-progress-bar"></span></div>
+            <span class="total-slide">/ 03</span>
+            <button class="slider-arrow slider-next" id="slider-next" type="button" aria-label="Next featured dish">
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
           </div>
         </div>
-      </section>
-      <!-- ==========================
+
+        <div class="hero-image-wrapper" id="hero-image-wrapper">
+          <img src="/images/pizza.png" alt="Juicy double cheeseburger with lettuce, tomato and sauce" class="hero-image"
+            id="hero-image" width="750" height="750" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+    <!-- ==========================
           HERO SECTION END
       ============================ -->
 
-      <!-- ==========================
+    <!-- ==========================
           ABOUT SECTION START
       ============================ -->
-      <section class="story-section" id="about" aria-labelledby="story-title">
-        <div class="story-container">
-          <div class="story-visual" data-reveal="left">
-            <img src="/images/about-shape.png" alt="" class="story-decoration" loading="lazy" aria-hidden="true">
-            <div class="story-image-wrap">
-              <img src="/images/chef.png" alt="TasteNest chef presenting a freshly prepared dish" class="story-image"
-                width="420" height="520" loading="lazy">
-            </div>
+    <section class="story-section" id="about" aria-labelledby="story-title">
+      <div class="story-container">
+        <div class="story-visual" data-reveal="left">
+          <img src="/images/about-shape.png" alt="" class="story-decoration" loading="lazy" aria-hidden="true">
+          <div class="story-image-wrap">
+            <img src="/images/chef.png" alt="TasteNest chef presenting a freshly prepared dish" class="story-image"
+              width="420" height="520" loading="lazy">
           </div>
+        </div>
 
-          <div class="story-content" data-reveal="right">
-            <span class="story-subtitle">MADE FRESH, SERVED WITH HEART</span>
-            <h2 class="story-title" id="story-title">
-              At TasteNest, Great Food Begins With Fresh Ingredients, Bold Flavors And A Passion For Cooking. From Juicy
-              Burgers To Crispy Chicken And Cheesy Pizza, Every Dish Is Made To Turn An Everyday Meal Into Something
-              Special.
-            </h2>
-            <div class="story-author">
-              <div class="story-author-image">
-                <img src="/images/founder.svg" alt="Portrait of a TasteNest team representative" width="54" height="54"
-                  loading="lazy">
-              </div>
-              <div class="story-author-info">
-                <h3>TasteNest Kitchen</h3>
-                <span>/ Our Passion, Your Plate</span>
-              </div>
+        <div class="story-content" data-reveal="right">
+          <span class="story-subtitle">MADE FRESH, SERVED WITH HEART</span>
+          <h2 class="story-title" id="story-title">
+            At TasteNest, Great Food Begins With Fresh Ingredients, Bold Flavors And A Passion For Cooking. From Juicy
+            Burgers To Crispy Chicken And Cheesy Pizza, Every Dish Is Made To Turn An Everyday Meal Into Something
+            Special.
+          </h2>
+          <div class="story-author">
+            <div class="story-author-image">
+              <img src="/images/founder.svg" alt="Portrait of a TasteNest team representative" width="54" height="54"
+                loading="lazy">
+            </div>
+            <div class="story-author-info">
+              <h3>TasteNest Kitchen</h3>
+              <span>/ Our Passion, Your Plate</span>
             </div>
           </div>
         </div>
-      </section>
-      <!-- ==========================
+      </div>
+    </section>
+    <!-- ==========================
           ABOUT SECTION END
       ============================ -->
 
-      <!-- ==========================
+    <!-- ==========================
           PRODUCTS SECTION START
       ============================ -->
-      <section class="products-section" id="shop" aria-labelledby="products-heading">
-        <div class="products-decorations" aria-hidden="true">
-          <img src="/images/product-shape-1.svg" alt="" class="product-decoration product-decoration--one" loading="lazy">
-          <img src="/images/product-shape-2.svg" alt="" class="product-decoration product-decoration--two" loading="lazy">
-          <img src="/images/product-shape-3.svg" alt="" class="product-decoration product-decoration--three"
-            loading="lazy">
+    <section class="products-section" id="shop" aria-labelledby="products-heading">
+      <div class="products-decorations" aria-hidden="true">
+        <img src="/images/product-shape-1.svg" alt="" class="product-decoration product-decoration--one" loading="lazy">
+        <img src="/images/product-shape-2.svg" alt="" class="product-decoration product-decoration--two" loading="lazy">
+        <img src="/images/product-shape-3.svg" alt="" class="product-decoration product-decoration--three"
+          loading="lazy">
+      </div>
+
+      <div class="products-container">
+        <div class="products-heading" data-reveal>
+          <span class="products-subtitle">FRESH FROM OUR KITCHEN</span>
+          <h2 id="products-heading">Find Your Next Favorite</h2>
         </div>
 
-        <div class="products-container">
-          <div class="products-heading" data-reveal>
-            <span class="products-subtitle">FRESH FROM OUR KITCHEN</span>
-            <h2 id="products-heading">Find Your Next Favorite</h2>
-          </div>
+        <div class="products-grid">
+          <article class="product-card" data-product-id="crispy-chicken-fries" data-price="18" data-reveal
+            style="--appear-delay: 0ms">
+            <div class="product-card__content">
+              <h3>Crispy Chicken &amp; Fries</h3>
+              <div class="product-price"><span>$18.00</span></div>
+            </div>
+            <div class="product-card__visual">
+              <img src="/images/food-burger.png" alt="Crispy chicken served with golden fries and dipping sauce"
+                class="product-card__image" width="300" height="260" loading="lazy">
+            </div>
+            <button class="product-card__add" type="button" aria-label="Add Crispy Chicken and Fries to cart">
+              <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </article>
 
-          <div class="products-grid">
-            <article class="product-card" data-product-id="crispy-chicken-fries" data-price="18" data-reveal
-              style="--appear-delay: 0ms">
-              <div class="product-card__content">
-                <h3>Crispy Chicken &amp; Fries</h3>
-                <div class="product-price"><span>$18.00</span></div>
-              </div>
-              <div class="product-card__visual">
-                <img src="/images/food-burger.png" alt="Crispy chicken served with golden fries and dipping sauce"
-                  class="product-card__image" width="300" height="260" loading="lazy">
-              </div>
-              <button class="product-card__add" type="button" aria-label="Add Crispy Chicken and Fries to cart">
-                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
-              </button>
-            </article>
+          <article class="product-card" data-product-id="golden-fried-drumsticks" data-price="19" data-reveal
+            style="--appear-delay: 80ms">
+            <div class="product-card__content">
+              <h3>Golden Fried Drumsticks</h3>
+              <div class="product-price"><span class="old-price">$24.00</span><span>$19.00</span></div>
+            </div>
+            <div class="product-card__visual">
+              <img src="/images/food-grilled-chicken.png" alt="Crunchy golden fried chicken drumsticks"
+                class="product-card__image" width="300" height="260" loading="lazy">
+            </div>
+            <button class="product-card__add" type="button" aria-label="Add Golden Fried Drumsticks to cart">
+              <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </article>
 
-            <article class="product-card" data-product-id="golden-fried-drumsticks" data-price="19" data-reveal
-              style="--appear-delay: 80ms">
-              <div class="product-card__content">
-                <h3>Golden Fried Drumsticks</h3>
-                <div class="product-price"><span class="old-price">$24.00</span><span>$19.00</span></div>
-              </div>
-              <div class="product-card__visual">
-                <img src="/images/food-grilled-chicken.png" alt="Crunchy golden fried chicken drumsticks"
-                  class="product-card__image" width="300" height="260" loading="lazy">
-              </div>
-              <button class="product-card__add" type="button" aria-label="Add Golden Fried Drumsticks to cart">
-                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
-              </button>
-            </article>
+          <article class="product-card" data-product-id="loaded-chicken-wrap" data-price="16" data-reveal
+            style="--appear-delay: 160ms">
+            <div class="product-card__content">
+              <h3>Loaded Chicken Wrap</h3>
+              <div class="product-price"><span class="old-price">$20.00</span><span>$16.00</span></div>
+            </div>
+            <div class="product-card__visual">
+              <img src="/images/food-chicken-wrap.png"
+                alt="Grilled chicken wrap filled with vegetables and creamy sauce" class="product-card__image"
+                width="300" height="260" loading="lazy">
+            </div>
+            <button class="product-card__add" type="button" aria-label="Add Loaded Chicken Wrap to cart">
+              <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </article>
 
-            <article class="product-card" data-product-id="loaded-chicken-wrap" data-price="16" data-reveal
-              style="--appear-delay: 160ms">
-              <div class="product-card__content">
-                <h3>Loaded Chicken Wrap</h3>
-                <div class="product-price"><span class="old-price">$20.00</span><span>$16.00</span></div>
-              </div>
-              <div class="product-card__visual">
-                <img src="/images/food-chicken-wrap.png"
-                  alt="Grilled chicken wrap filled with vegetables and creamy sauce" class="product-card__image"
-                  width="300" height="260" loading="lazy">
-              </div>
-              <button class="product-card__add" type="button" aria-label="Add Loaded Chicken Wrap to cart">
-                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
-              </button>
-            </article>
+          <article class="product-card" data-product-id="fast-food-combo" data-price="27" data-reveal
+            style="--appear-delay: 240ms">
+            <div class="product-card__content">
+              <h3>Ultimate Fast-Food Combo</h3>
+              <div class="product-price"><span class="old-price">$32.00</span><span>$27.00</span></div>
+            </div>
+            <div class="product-card__visual">
+              <img src="/images/food-combo.png" alt="Fast food combo of burger, crispy chicken, fries and sides"
+                class="product-card__image" width="300" height="260" loading="lazy">
+            </div>
+            <button class="product-card__add" type="button" aria-label="Add Ultimate Fast-Food Combo to cart">
+              <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </article>
 
-            <article class="product-card" data-product-id="fast-food-combo" data-price="27" data-reveal
-              style="--appear-delay: 240ms">
-              <div class="product-card__content">
-                <h3>Ultimate Fast-Food Combo</h3>
-                <div class="product-price"><span class="old-price">$32.00</span><span>$27.00</span></div>
-              </div>
-              <div class="product-card__visual">
-                <img src="/images/food-combo.png" alt="Fast food combo of burger, crispy chicken, fries and sides"
-                  class="product-card__image" width="300" height="260" loading="lazy">
-              </div>
-              <button class="product-card__add" type="button" aria-label="Add Ultimate Fast-Food Combo to cart">
-                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
-              </button>
-            </article>
+          <article class="product-card" data-product-id="deep-dish-pizza" data-price="22" data-reveal
+            style="--appear-delay: 0ms">
+            <div class="product-card__content">
+              <h3>Cheesy Deep-Dish Pizza</h3>
+              <div class="product-price"><span class="old-price">$26.00</span><span>$22.00</span></div>
+            </div>
+            <div class="product-card__visual">
+              <img src="/images/food-deep-pizza.png" alt="Deep-dish pizza slice with stretchy melted cheese"
+                class="product-card__image" width="300" height="260" loading="lazy">
+            </div>
+            <button class="product-card__add" type="button" aria-label="Add Cheesy Deep-Dish Pizza to cart">
+              <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </article>
 
-            <article class="product-card" data-product-id="deep-dish-pizza" data-price="22" data-reveal
-              style="--appear-delay: 0ms">
-              <div class="product-card__content">
-                <h3>Cheesy Deep-Dish Pizza</h3>
-                <div class="product-price"><span class="old-price">$26.00</span><span>$22.00</span></div>
-              </div>
-              <div class="product-card__visual">
-                <img src="/images/food-deep-pizza.png" alt="Deep-dish pizza slice with stretchy melted cheese"
-                  class="product-card__image" width="300" height="260" loading="lazy">
-              </div>
-              <button class="product-card__add" type="button" aria-label="Add Cheesy Deep-Dish Pizza to cart">
-                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
-              </button>
-            </article>
+          <article class="product-card" data-product-id="stir-fried-noodles" data-price="17" data-reveal
+            style="--appear-delay: 80ms">
+            <div class="product-card__content">
+              <h3>Spicy Stir-Fried Noodles</h3>
+              <div class="product-price"><span class="old-price">$21.00</span><span>$17.00</span></div>
+            </div>
+            <div class="product-card__visual">
+              <img src="/images/food-pasta.png" alt="Spicy stir-fried noodles with fresh vegetables on a plate"
+                class="product-card__image" width="300" height="260" loading="lazy">
+            </div>
+            <button class="product-card__add" type="button" aria-label="Add Spicy Stir-Fried Noodles to cart">
+              <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </article>
 
-            <article class="product-card" data-product-id="stir-fried-noodles" data-price="17" data-reveal
-              style="--appear-delay: 80ms">
-              <div class="product-card__content">
-                <h3>Spicy Stir-Fried Noodles</h3>
-                <div class="product-price"><span class="old-price">$21.00</span><span>$17.00</span></div>
-              </div>
-              <div class="product-card__visual">
-                <img src="/images/food-pasta.png" alt="Spicy stir-fried noodles with fresh vegetables on a plate"
-                  class="product-card__image" width="300" height="260" loading="lazy">
-              </div>
-              <button class="product-card__add" type="button" aria-label="Add Spicy Stir-Fried Noodles to cart">
-                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
-              </button>
-            </article>
+          <article class="product-card" data-product-id="double-cheeseburger" data-price="19" data-reveal
+            style="--appear-delay: 160ms">
+            <div class="product-card__content">
+              <h3>Double Cheeseburger</h3>
+              <div class="product-price"><span class="old-price">$23.00</span><span>$19.00</span></div>
+            </div>
+            <div class="product-card__visual">
+              <img src="/images/food-whopper-burger.png"
+                alt="Double cheeseburger stacked with lettuce, tomato and sauce" class="product-card__image" width="300"
+                height="260" loading="lazy">
+            </div>
+            <button class="product-card__add" type="button" aria-label="Add Double Cheeseburger to cart">
+              <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </article>
 
-            <article class="product-card" data-product-id="double-cheeseburger" data-price="19" data-reveal
-              style="--appear-delay: 160ms">
-              <div class="product-card__content">
-                <h3>Double Cheeseburger</h3>
-                <div class="product-price"><span class="old-price">$23.00</span><span>$19.00</span></div>
-              </div>
-              <div class="product-card__visual">
-                <img src="/images/food-whopper-burger.png"
-                  alt="Double cheeseburger stacked with lettuce, tomato and sauce" class="product-card__image" width="300"
-                  height="260" loading="lazy">
-              </div>
-              <button class="product-card__add" type="button" aria-label="Add Double Cheeseburger to cart">
-                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
-              </button>
-            </article>
-
-            <article class="product-card" data-product-id="crispy-shrimp-dip" data-price="21" data-reveal
-              style="--appear-delay: 240ms">
-              <div class="product-card__content">
-                <h3>Crispy Shrimp &amp; Dip</h3>
-                <div class="product-price"><span class="old-price">$25.00</span><span>$21.00</span></div>
-              </div>
-              <div class="product-card__visual">
-                <img src="/images/food-beef-wrap.png" alt="Crispy fried shrimp served with creamy dipping sauce and lemon"
-                  class="product-card__image" width="300" height="260" loading="lazy">
-              </div>
-              <button class="product-card__add" type="button" aria-label="Add Crispy Shrimp and Dip to cart">
-                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
-              </button>
-            </article>
-          </div>
+          <article class="product-card" data-product-id="crispy-shrimp-dip" data-price="21" data-reveal
+            style="--appear-delay: 240ms">
+            <div class="product-card__content">
+              <h3>Crispy Shrimp &amp; Dip</h3>
+              <div class="product-price"><span class="old-price">$25.00</span><span>$21.00</span></div>
+            </div>
+            <div class="product-card__visual">
+              <img src="/images/food-beef-wrap.png" alt="Crispy fried shrimp served with creamy dipping sauce and lemon"
+                class="product-card__image" width="300" height="260" loading="lazy">
+            </div>
+            <button class="product-card__add" type="button" aria-label="Add Crispy Shrimp and Dip to cart">
+              <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </article>
         </div>
-      </section>
-      <!-- ==========================
+      </div>
+    </section>
+    <!-- ==========================
           PRODUCTS SECTION END
       ============================ -->
 
-      <!-- ==========================
+    <!-- ==========================
           DEAL OF THE DAY SECTION START
       ============================ -->
-      <section class="deal-section" id="deals" aria-label="Deal of the Day" aria-roledescription="carousel">
-        <div class="deal-visual">
-          <img src="/images/deal-1.png"
-            alt="Smoky grilled barbecue meat with seasoned fries, vegetables and dipping sauce" class="deal-image"
-            id="deal-image" width="1400" height="900" loading="lazy">
-        </div>
-        <div class="deal-panel">
-          <div class="deal-content">
-            <span class="deal-subtitle">Today's Chef Special</span>
-            <h2 class="deal-title" id="deal-title">
-              <span>SMOKY BBQ</span>
-              <span>FEAST DAY</span>
-            </h2>
-            <div class="deal-price">
-              <span class="deal-price-label">Special Price</span>
-              <span class="deal-price-value" id="deal-price">$55</span>
-            </div>
-            <p class="deal-description" id="deal-description">Savor tender, smoky barbecue served with golden fries,
-              vibrant vegetables and a rich dipping sauce. A hearty feast made for serious food lovers.</p>
-            <a href="#shop" class="deal-order-btn" id="deal-order-btn" aria-label="Browse the menu and order food">
-              <span class="deal-order-icon"><ion-icon name="car-sport-outline" aria-hidden="true"></ion-icon></span>
-              <span class="deal-order-text">Order Now</span>
-              <ion-icon name="arrow-forward-outline" class="deal-order-arrow" aria-hidden="true"></ion-icon>
-            </a>
+    <section class="deal-section" id="deals" aria-label="Deal of the Day" aria-roledescription="carousel">
+      <div class="deal-visual">
+        <img src="/images/deal-1.png"
+          alt="Smoky grilled barbecue meat with seasoned fries, vegetables and dipping sauce" class="deal-image"
+          id="deal-image" width="1400" height="900" loading="lazy">
+      </div>
+      <div class="deal-panel">
+        <div class="deal-content">
+          <span class="deal-subtitle">Today's Chef Special</span>
+          <h2 class="deal-title" id="deal-title">
+            <span>SMOKY BBQ</span>
+            <span>FEAST DAY</span>
+          </h2>
+          <div class="deal-price">
+            <span class="deal-price-label">Special Price</span>
+            <span class="deal-price-value" id="deal-price">$55</span>
           </div>
-          <div class="deal-slider-controls" aria-label="Deal slider controls">
-            <button class="deal-slider-btn deal-slider-next" id="deal-next" type="button" aria-label="Next deal">
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </button>
-            <button class="deal-slider-btn deal-slider-prev" id="deal-prev" type="button" aria-label="Previous deal">
-              <ion-icon name="arrow-back-outline" aria-hidden="true"></ion-icon>
-            </button>
-          </div>
-          <p class="deal-screen-reader" id="deal-status" role="status" aria-live="polite" aria-atomic="true"></p>
+          <p class="deal-description" id="deal-description">Savor tender, smoky barbecue served with golden fries,
+            vibrant vegetables and a rich dipping sauce. A hearty feast made for serious food lovers.</p>
+          <a href="#shop" class="deal-order-btn" id="deal-order-btn" aria-label="Browse the menu and order food">
+            <span class="deal-order-icon"><ion-icon name="car-sport-outline" aria-hidden="true"></ion-icon></span>
+            <span class="deal-order-text">Order Now</span>
+            <ion-icon name="arrow-forward-outline" class="deal-order-arrow" aria-hidden="true"></ion-icon>
+          </a>
         </div>
-      </section>
-      <!-- ==========================
+        <div class="deal-slider-controls" aria-label="Deal slider controls">
+          <button class="deal-slider-btn deal-slider-next" id="deal-next" type="button" aria-label="Next deal">
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </button>
+          <button class="deal-slider-btn deal-slider-prev" id="deal-prev" type="button" aria-label="Previous deal">
+            <ion-icon name="arrow-back-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+        <p class="deal-screen-reader" id="deal-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      </div>
+    </section>
+    <!-- ==========================
           DEAL OF THE DAY SECTION END
       ============================ -->
 
-      <!-- ==========================
+    <!-- ==========================
           FOOD CATEGORIES SECTION START
       ============================ -->
-      <section class="food-feature-section" id="food-categories" aria-label="Customer favorite foods">
-        <div class="container food-feature-container">
-          <div class="food-feature-grid">
-            <article class="food-feature-card" data-food-reveal style="--feature-delay: 0ms">
-              <div class="food-feature-image"><img src="/images/feature-pizza.png"
-                  alt="Classic Italian pizza topped with cheese, herbs and vegetables" width="170" height="170"
-                  loading="lazy"></div>
-              <div class="food-feature-content">
-                <h3>Classic Italian Pizza</h3>
-                <a href="#shop" class="food-feature-link" aria-label="Browse pizza on our menu"><span>Explore
-                    Menu</span><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
-              </div>
-              <span class="food-feature-ghost" aria-hidden="true">Pizza</span>
-            </article>
+    <section class="food-feature-section" id="food-categories" aria-label="Customer favorite foods">
+      <div class="container food-feature-container">
+        <div class="food-feature-grid">
+          <article class="food-feature-card" data-food-reveal style="--feature-delay: 0ms">
+            <div class="food-feature-image"><img src="/images/feature-pizza.png"
+                alt="Classic Italian pizza topped with cheese, herbs and vegetables" width="170" height="170"
+                loading="lazy"></div>
+            <div class="food-feature-content">
+              <h3>Classic Italian Pizza</h3>
+              <a href="#shop" class="food-feature-link" aria-label="Browse pizza on our menu"><span>Explore
+                  Menu</span><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
+            </div>
+            <span class="food-feature-ghost" aria-hidden="true">Pizza</span>
+          </article>
 
-            <article class="food-feature-card" data-food-reveal style="--feature-delay: 100ms">
-              <div class="food-feature-image"><img src="/images/feature-burger.png"
-                  alt="Juicy burger with lettuce, onion, tomato and melted cheese" width="170" height="170"
-                  loading="lazy"></div>
-              <div class="food-feature-content">
-                <h3>Fresh &amp; Juicy Burger</h3>
-                <a href="#shop" class="food-feature-link" aria-label="Browse burgers on our menu"><span>Explore
-                    Menu</span><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
-              </div>
-              <span class="food-feature-ghost" aria-hidden="true">Burger</span>
-            </article>
+          <article class="food-feature-card" data-food-reveal style="--feature-delay: 100ms">
+            <div class="food-feature-image"><img src="/images/feature-burger.png"
+                alt="Juicy burger with lettuce, onion, tomato and melted cheese" width="170" height="170"
+                loading="lazy"></div>
+            <div class="food-feature-content">
+              <h3>Fresh &amp; Juicy Burger</h3>
+              <a href="#shop" class="food-feature-link" aria-label="Browse burgers on our menu"><span>Explore
+                  Menu</span><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
+            </div>
+            <span class="food-feature-ghost" aria-hidden="true">Burger</span>
+          </article>
 
-            <article class="food-feature-card" data-food-reveal style="--feature-delay: 200ms">
-              <div class="food-feature-image"><img src="/images/feature-drumsticks.png"
-                  alt="Seasoned roasted chicken drumsticks with herbs" width="170" height="170" loading="lazy"></div>
-              <div class="food-feature-content">
-                <h3>Spiced Chicken Drumsticks</h3>
-                <a href="#shop" class="food-feature-link" aria-label="Browse chicken favorites on our menu"><span>Explore
-                    Menu</span><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
-              </div>
-              <span class="food-feature-ghost" aria-hidden="true">Chicken</span>
-            </article>
+          <article class="food-feature-card" data-food-reveal style="--feature-delay: 200ms">
+            <div class="food-feature-image"><img src="/images/feature-drumsticks.png"
+                alt="Seasoned roasted chicken drumsticks with herbs" width="170" height="170" loading="lazy"></div>
+            <div class="food-feature-content">
+              <h3>Spiced Chicken Drumsticks</h3>
+              <a href="#shop" class="food-feature-link" aria-label="Browse chicken favorites on our menu"><span>Explore
+                  Menu</span><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
+            </div>
+            <span class="food-feature-ghost" aria-hidden="true">Chicken</span>
+          </article>
 
-            <article class="food-feature-card" data-food-reveal style="--feature-delay: 300ms">
-              <div class="food-feature-image"><img src="/images/feature-samosa.png"
-                  alt="Golden fried samosa rolls with dipping sauce" width="170" height="170" loading="lazy"></div>
-              <div class="food-feature-content">
-                <h3>Golden Crispy Samosas</h3>
-                <a href="#shop" class="food-feature-link" aria-label="Browse crispy bites on our menu"><span>Explore
-                    Menu</span><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
-              </div>
-              <span class="food-feature-ghost" aria-hidden="true">Samosa</span>
-            </article>
-          </div>
+          <article class="food-feature-card" data-food-reveal style="--feature-delay: 300ms">
+            <div class="food-feature-image"><img src="/images/feature-samosa.png"
+                alt="Golden fried samosa rolls with dipping sauce" width="170" height="170" loading="lazy"></div>
+            <div class="food-feature-content">
+              <h3>Golden Crispy Samosas</h3>
+              <a href="#shop" class="food-feature-link" aria-label="Browse crispy bites on our menu"><span>Explore
+                  Menu</span><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
+            </div>
+            <span class="food-feature-ghost" aria-hidden="true">Samosa</span>
+          </article>
         </div>
-      </section>
-      <!-- ==========================
+      </div>
+    </section>
+    <!-- ==========================
           FOOD CATEGORIES SECTION END
       ============================ -->
 
-      <!-- ==========================
+    <!-- ==========================
           INFINITE MARQUEE SECTION START
       ============================ -->
-      <section class="reviews-marquee-section" id="testimonials" aria-labelledby="reviews-marquee-heading">
-        <h2 class="reviews-marquee-sr-only" id="reviews-marquee-heading">Customer Stories and Food Reviews</h2>
-        <div class="reviews-marquee" aria-hidden="true">
-          <div class="reviews-marquee-track">
-            <div class="reviews-marquee-group">
-              <span class="reviews-marquee-text">Made With Love</span>
-              <span class="reviews-marquee-star">☆</span>
-              <span class="reviews-marquee-text">Loved With Every Bite</span>
-            </div>
-            <div class="reviews-marquee-group">
-              <span class="reviews-marquee-text">Made With Love</span>
-              <span class="reviews-marquee-star">☆</span>
-              <span class="reviews-marquee-text">Loved With Every Bite</span>
-            </div>
+    <section class="reviews-marquee-section" id="testimonials" aria-labelledby="reviews-marquee-heading">
+      <h2 class="reviews-marquee-sr-only" id="reviews-marquee-heading">Customer Stories and Food Reviews</h2>
+      <div class="reviews-marquee" aria-hidden="true">
+        <div class="reviews-marquee-track">
+          <div class="reviews-marquee-group">
+            <span class="reviews-marquee-text">Made With Love</span>
+            <span class="reviews-marquee-star">☆</span>
+            <span class="reviews-marquee-text">Loved With Every Bite</span>
+          </div>
+          <div class="reviews-marquee-group">
+            <span class="reviews-marquee-text">Made With Love</span>
+            <span class="reviews-marquee-star">☆</span>
+            <span class="reviews-marquee-text">Loved With Every Bite</span>
           </div>
         </div>
-      </section>
-      <!-- ==========================
+      </div>
+    </section>
+    <!-- ==========================
           INFINITE MARQUEE SECTION END
       ============================ -->
 
-      <!-- ==========================
+    <!-- ==========================
           CUSTOMER REVIEWS SECTION START
       ============================ -->
-      <section class="customer-review" id="customer-reviews" aria-labelledby="customer-review-heading"
-        aria-roledescription="carousel">
-        <div class="customer-review__decorations" aria-hidden="true">
-          <img src="/images/review-burger-shape.svg" alt="" class="customer-review__shape customer-review__shape--burger"
-            loading="lazy" width="150" height="150">
-          <img src="/images/review-fries-shape.svg" alt="" class="customer-review__shape customer-review__shape--fries"
-            loading="lazy" width="110" height="120">
-          <img src="/images/review-pizza-shape.svg" alt="" class="customer-review__shape customer-review__shape--pizza"
-            loading="lazy" width="120" height="120">
-        </div>
-        <div class="container customer-review__container">
-          <div class="customer-review__inner">
-            <div class="customer-review__information">
-              <h2 class="customer-review__name" id="customer-review-heading">Piter Bowman</h2>
-              <p class="customer-review__designation" id="customer-review-designation">TasteNest Guest</p>
-            </div>
-            <blockquote class="customer-review__quote">
-              <p id="customer-review-text">“Every Bite Was Packed With Flavor! The Food Was Fresh, The Atmosphere Felt
-                Warm, And The Whole Experience Made Our Evening Special. I’m Already Looking Forward To Coming Back.”</p>
-            </blockquote>
-            <div class="customer-review__rating" role="img" aria-label="5 out of 5 stars">
-              <span aria-hidden="true">★★★★★</span>
-            </div>
-            <div class="customer-review__navigation" aria-label="Choose a customer review">
-              <button class="customer-review__avatar customer-review__avatar--side" type="button"
-                data-review-slot="previous" aria-label="View previous customer review" aria-pressed="false">
-                <img src="/images/review-client-1.png" alt="" width="76" height="76" loading="lazy">
-              </button>
-              <button class="customer-review__avatar customer-review__avatar--active" type="button"
-                data-review-slot="active" aria-label="Current customer review: Piter Bowman" aria-pressed="true">
-                <img src="/images/review-client-2.png" alt="" width="84" height="84" loading="lazy">
-              </button>
-              <button class="customer-review__avatar customer-review__avatar--side" type="button" data-review-slot="next"
-                aria-label="View next customer review" aria-pressed="false">
-                <img src="/images/review-client-3.png" alt="" width="76" height="76" loading="lazy">
-              </button>
-            </div>
-            <p class="customer-review__status" id="customer-review-status" role="status" aria-live="polite"
-              aria-atomic="true"></p>
+    <section class="customer-review" id="customer-reviews" aria-labelledby="customer-review-heading"
+      aria-roledescription="carousel">
+      <div class="customer-review__decorations" aria-hidden="true">
+        <img src="/images/review-burger-shape.svg" alt="" class="customer-review__shape customer-review__shape--burger"
+          loading="lazy" width="150" height="150">
+        <img src="/images/review-fries-shape.svg" alt="" class="customer-review__shape customer-review__shape--fries"
+          loading="lazy" width="110" height="120">
+        <img src="/images/review-pizza-shape.svg" alt="" class="customer-review__shape customer-review__shape--pizza"
+          loading="lazy" width="120" height="120">
+      </div>
+      <div class="container customer-review__container">
+        <div class="customer-review__inner">
+          <div class="customer-review__information">
+            <h2 class="customer-review__name" id="customer-review-heading">Piter Bowman</h2>
+            <p class="customer-review__designation" id="customer-review-designation">TasteNest Guest</p>
           </div>
+          <blockquote class="customer-review__quote">
+            <p id="customer-review-text">“Every Bite Was Packed With Flavor! The Food Was Fresh, The Atmosphere Felt
+              Warm, And The Whole Experience Made Our Evening Special. I’m Already Looking Forward To Coming Back.”</p>
+          </blockquote>
+          <div class="customer-review__rating" role="img" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <div class="customer-review__navigation" aria-label="Choose a customer review">
+            <button class="customer-review__avatar customer-review__avatar--side" type="button"
+              data-review-slot="previous" aria-label="View previous customer review" aria-pressed="false">
+              <img src="/images/review-client-1.png" alt="" width="76" height="76" loading="lazy">
+            </button>
+            <button class="customer-review__avatar customer-review__avatar--active" type="button"
+              data-review-slot="active" aria-label="Current customer review: Piter Bowman" aria-pressed="true">
+              <img src="/images/review-client-2.png" alt="" width="84" height="84" loading="lazy">
+            </button>
+            <button class="customer-review__avatar customer-review__avatar--side" type="button" data-review-slot="next"
+              aria-label="View next customer review" aria-pressed="false">
+              <img src="/images/review-client-3.png" alt="" width="76" height="76" loading="lazy">
+            </button>
+          </div>
+          <p class="customer-review__status" id="customer-review-status" role="status" aria-live="polite"
+            aria-atomic="true"></p>
         </div>
-      </section>
-      <!-- ==========================
+      </div>
+    </section>
+    <!-- ==========================
           CUSTOMER REVIEWS SECTION END
       ============================ -->
 
-      <!-- ==========================
+    <!-- ==========================
           NEWS & BLOG SECTION START
       ============================ -->
-      <section class="news-blog-section" id="blog" aria-labelledby="news-blog-heading">
-        <div class="container news-blog-container">
-          <div class="news-blog-heading" data-news-reveal>
-            <span class="news-blog-subtitle">FROM THE TASTENEST JOURNAL</span>
-            <h2 id="news-blog-heading">Fresh Stories &amp; Food Finds</h2>
-          </div>
-          <div class="news-blog-grid">
-            <article class="news-blog-card" data-news-reveal style="--news-delay: 100ms">
-              <button class="news-blog-image" type="button" data-blog-open="1"
-                aria-label="Read The Ultimate Guide to a Perfect Fast-Food Feast">
-                <img src="/images/blog-1.png" alt="A spread of loaded sandwiches, burgers, French fries and sauces"
-                  width="800" height="470" loading="lazy">
-              </button>
-              <div class="news-blog-content">
-                <div class="news-blog-meta">
-                  <span class="news-blog-category">Fast Food</span>
-                  <time datetime="2026-11-02">02 Nov 2026</time>
-                </div>
-                <h3 class="news-blog-title"><button type="button" data-blog-open="1">The Ultimate Guide To A Perfect
-                    Fast-Food Feast</button></h3>
-              </div>
-            </article>
-
-            <article class="news-blog-card" data-news-reveal style="--news-delay: 200ms">
-              <button class="news-blog-image" type="button" data-blog-open="2"
-                aria-label="Read Behind the Grill: How Great Flavor Comes Together">
-                <img src="/images/blog-2.png" alt="Chef preparing a hearty wrap with grilled meat and fresh vegetables"
-                  width="800" height="470" loading="lazy">
-              </button>
-              <div class="news-blog-content">
-                <div class="news-blog-meta">
-                  <span class="news-blog-category">Kitchen Stories</span>
-                  <time datetime="2026-11-04">04 Nov 2026</time>
-                </div>
-                <h3 class="news-blog-title"><button type="button" data-blog-open="2">Behind The Grill: How Great Flavor
-                    Comes Together</button></h3>
-              </div>
-            </article>
-
-            <article class="news-blog-card" data-news-reveal style="--news-delay: 300ms">
-              <button class="news-blog-image" type="button" data-blog-open="3"
-                aria-label="Read Coffee, Comfort and the Joy of Dining Together">
-                <img src="/images/blog-3.png" alt="Smiling guest enjoying a warm cup of coffee at a cozy café table"
-                  width="800" height="470" loading="lazy">
-              </button>
-              <div class="news-blog-content">
-                <div class="news-blog-meta">
-                  <span class="news-blog-category">Dining Moments</span>
-                  <time datetime="2026-11-06">06 Nov 2026</time>
-                </div>
-                <h3 class="news-blog-title"><button type="button" data-blog-open="3">Coffee, Comfort &amp; The Joy Of
-                    Dining Together</button></h3>
-              </div>
-            </article>
-          </div>
+    <section class="news-blog-section" id="blog" aria-labelledby="news-blog-heading">
+      <div class="container news-blog-container">
+        <div class="news-blog-heading" data-news-reveal>
+          <span class="news-blog-subtitle">FROM THE TASTENEST JOURNAL</span>
+          <h2 id="news-blog-heading">Fresh Stories &amp; Food Finds</h2>
         </div>
-
-        <dialog class="news-blog-dialog" id="news-blog-dialog" aria-labelledby="news-blog-dialog-title">
-          <button class="news-blog-dialog-close" type="button" aria-label="Close article">
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
-          <div class="news-blog-dialog-image">
-            <img id="news-blog-dialog-image" src="/images/blog-1.png" alt="" width="800" height="470">
-          </div>
-          <div class="news-blog-dialog-content">
-            <div class="news-blog-dialog-meta">
-              <span id="news-blog-dialog-category"></span>
-              <time id="news-blog-dialog-date"></time>
+        <div class="news-blog-grid">
+          <article class="news-blog-card" data-news-reveal style="--news-delay: 100ms">
+            <button class="news-blog-image" type="button" data-blog-open="1"
+              aria-label="Read The Ultimate Guide to a Perfect Fast-Food Feast">
+              <img src="/images/blog-1.png" alt="A spread of loaded sandwiches, burgers, French fries and sauces"
+                width="800" height="470" loading="lazy">
+            </button>
+            <div class="news-blog-content">
+              <div class="news-blog-meta">
+                <span class="news-blog-category">Fast Food</span>
+                <time datetime="2026-11-02">02 Nov 2026</time>
+              </div>
+              <h3 class="news-blog-title"><button type="button" data-blog-open="1">The Ultimate Guide To A Perfect
+                  Fast-Food Feast</button></h3>
             </div>
-            <h2 id="news-blog-dialog-title"></h2>
-            <div class="news-blog-dialog-description" id="news-blog-dialog-description"></div>
+          </article>
+
+          <article class="news-blog-card" data-news-reveal style="--news-delay: 200ms">
+            <button class="news-blog-image" type="button" data-blog-open="2"
+              aria-label="Read Behind the Grill: How Great Flavor Comes Together">
+              <img src="/images/blog-2.png" alt="Chef preparing a hearty wrap with grilled meat and fresh vegetables"
+                width="800" height="470" loading="lazy">
+            </button>
+            <div class="news-blog-content">
+              <div class="news-blog-meta">
+                <span class="news-blog-category">Kitchen Stories</span>
+                <time datetime="2026-11-04">04 Nov 2026</time>
+              </div>
+              <h3 class="news-blog-title"><button type="button" data-blog-open="2">Behind The Grill: How Great Flavor
+                  Comes Together</button></h3>
+            </div>
+          </article>
+
+          <article class="news-blog-card" data-news-reveal style="--news-delay: 300ms">
+            <button class="news-blog-image" type="button" data-blog-open="3"
+              aria-label="Read Coffee, Comfort and the Joy of Dining Together">
+              <img src="/images/blog-3.png" alt="Smiling guest enjoying a warm cup of coffee at a cozy café table"
+                width="800" height="470" loading="lazy">
+            </button>
+            <div class="news-blog-content">
+              <div class="news-blog-meta">
+                <span class="news-blog-category">Dining Moments</span>
+                <time datetime="2026-11-06">06 Nov 2026</time>
+              </div>
+              <h3 class="news-blog-title"><button type="button" data-blog-open="3">Coffee, Comfort &amp; The Joy Of
+                  Dining Together</button></h3>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <dialog class="news-blog-dialog" id="news-blog-dialog" aria-labelledby="news-blog-dialog-title">
+        <button class="news-blog-dialog-close" type="button" aria-label="Close article">
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <div class="news-blog-dialog-image">
+          <img id="news-blog-dialog-image" src="/images/blog-1.png" alt="" width="800" height="470">
+        </div>
+        <div class="news-blog-dialog-content">
+          <div class="news-blog-dialog-meta">
+            <span id="news-blog-dialog-category"></span>
+            <time id="news-blog-dialog-date"></time>
           </div>
-        </dialog>
-      </section>
-      <!-- ==========================
+          <h2 id="news-blog-dialog-title"></h2>
+          <div class="news-blog-dialog-description" id="news-blog-dialog-description"></div>
+        </div>
+      </dialog>
+    </section>
+    <!-- ==========================
           NEWS & BLOG SECTION END
       ============================ -->
 
 
-      <!-- ==========================
+    <!-- ==========================
         NEWSLETTER SECTION START
       ============================ -->
-      <section
-        class="tn-newsletter"
-        id="newsletter"
-        aria-labelledby="tn-newsletter-heading"
-      >
-        <div class="container tn-newsletter__container">
+    <section class="tn-newsletter" id="newsletter" aria-labelledby="tn-newsletter-heading">
+      <div class="container tn-newsletter__container">
 
-          <div class="tn-newsletter__banner" data-reveal>
+        <div class="tn-newsletter__banner" data-reveal>
 
-            <div class="tn-newsletter__decorations" aria-hidden="true">
+          <div class="tn-newsletter__decorations" aria-hidden="true">
 
-              <img
-                src="/images/newsletter-fries.png"
-                alt=""
-                class="tn-newsletter__shape tn-newsletter__shape--fries"
-                loading="lazy"
-              >
+            <img src="/images/newsletter-fries.png" alt="" class="tn-newsletter__shape tn-newsletter__shape--fries"
+              loading="lazy">
 
-              <img
-                src="/images/newsletter-candy.png"
-                alt=""
-                class="tn-newsletter__shape tn-newsletter__shape--candy"
-                loading="lazy"
-              >
+            <img src="/images/newsletter-candy.png" alt="" class="tn-newsletter__shape tn-newsletter__shape--candy"
+              loading="lazy">
 
-              <img
-                src="/images/newsletter-cupcake.png"
-                alt=""
-                class="tn-newsletter__shape tn-newsletter__shape--cupcake"
-                loading="lazy"
-              >
+            <img src="/images/newsletter-cupcake.png" alt="" class="tn-newsletter__shape tn-newsletter__shape--cupcake"
+              loading="lazy">
+
+          </div>
+
+          <div class="tn-newsletter__grid">
+
+            <div class="tn-newsletter__content">
+
+              <h2 class="tn-newsletter__title" id="tn-newsletter-heading">
+                Subscribe Our Newsletter
+                <br>
+                To Get More Offers
+              </h2>
+
+              <p class="tn-newsletter__description">
+                Get the latest TasteNest news, exclusive food offers,
+                seasonal specials, and delicious updates delivered
+                straight to your inbox.
+              </p>
 
             </div>
 
-            <div class="tn-newsletter__grid">
+            <div class="tn-newsletter__form-wrapper">
 
-              <div class="tn-newsletter__content">
+              <form class="tn-subscribe-form tn-newsletter__form" id="tn-newsletter-form" data-endpoint="">
 
-                <h2
-                  class="tn-newsletter__title"
-                  id="tn-newsletter-heading"
-                >
-                  Subscribe Our Newsletter
-                  <br>
-                  To Get More Offers
-                </h2>
+                <label class="tn-newsletter__sr-only" for="tn-newsletter-email">
+                  Email Address
+                </label>
 
-                <p class="tn-newsletter__description">
-                  Get the latest TasteNest news, exclusive food offers,
-                  seasonal specials, and delicious updates delivered
-                  straight to your inbox.
-                </p>
+                <div class="tn-newsletter__input-group">
 
-              </div>
+                  <ion-icon name="mail" aria-hidden="true"></ion-icon>
 
-              <div class="tn-newsletter__form-wrapper">
+                  <input type="email" id="tn-newsletter-email" name="email" placeholder="Enter Email Address"
+                    autocomplete="email" required>
 
-                <form
-                  class="tn-subscribe-form tn-newsletter__form"
-                  id="tn-newsletter-form"
-                  data-endpoint=""
-                >
+                </div>
 
-                  <label
-                    class="tn-newsletter__sr-only"
-                    for="tn-newsletter-email"
-                  >
-                    Email Address
-                  </label>
+                <button type="submit" class="tn-newsletter__button">
+                  <span>Subscribe Now</span>
+                </button>
 
-                  <div class="tn-newsletter__input-group">
+                <label class="tn-newsletter__privacy">
 
-                    <ion-icon
-                      name="mail"
-                      aria-hidden="true"
-                    ></ion-icon>
+                  <input type="checkbox" name="consent" required>
 
-                    <input
-                      type="email"
-                      id="tn-newsletter-email"
-                      name="email"
-                      placeholder="Enter Email Address"
-                      autocomplete="email"
-                      required
-                    >
+                  <span>
+                    I Agree To The
+                    <button type="button" class="tn-newsletter__privacy-link" data-tn-open-privacy>
+                      Privacy Policy
+                    </button>.
+                  </span>
 
-                  </div>
+                </label>
 
-                  <button
-                    type="submit"
-                    class="tn-newsletter__button"
-                  >
-                    <span>Subscribe Now</span>
-                  </button>
+                <p class="tn-newsletter__feedback" data-newsletter-status role="status" aria-live="polite"></p>
 
-                  <label class="tn-newsletter__privacy">
-
-                    <input
-                      type="checkbox"
-                      name="consent"
-                      required
-                    >
-
-                    <span>
-                      I Agree To The
-                      <button
-                        type="button"
-                        class="tn-newsletter__privacy-link"
-                        data-tn-open-privacy
-                      >
-                        Privacy Policy
-                      </button>.
-                    </span>
-
-                  </label>
-
-                  <p
-                    class="tn-newsletter__feedback"
-                    data-newsletter-status
-                    role="status"
-                    aria-live="polite"
-                  ></p>
-
-                </form>
-
-              </div>
+              </form>
 
             </div>
 
@@ -683,67 +630,137 @@
 
         </div>
 
-        <dialog
-          class="tn-privacy-dialog"
-          id="tn-privacy-dialog"
-          aria-labelledby="tn-privacy-title"
-        >
-          <button
-            type="button"
-            class="tn-privacy-dialog__close"
-            aria-label="Close privacy information"
-          >
-            <ion-icon
-              name="close-outline"
-              aria-hidden="true"
-            ></ion-icon>
-          </button>
+      </div>
 
-          <h2 id="tn-privacy-title">Newsletter Privacy</h2>
-
-          <p>
-            This is a demonstration newsletter form. No email address
-            is transmitted until a subscription service is connected.
-            A complete privacy policy must be provided before launch.
-          </p>
-
-          <button
-            type="button"
-            class="tn-privacy-dialog__button"
-          >
-            Got It
-          </button>
-        </dialog>
-
-      </section>
-      <!-- ==========================
-        NEWSLETTER SECTION END
-      ============================ -->
-    </main>
-
-    <!-- ==========================
-        CART SECTION START
-    ============================ -->
-    <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
-    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart">
-      <div class="cart-header">
-        <h2>Your Cart</h2>
-        <button type="button" id="cart-close" aria-label="Close shopping cart">
+      <dialog class="tn-privacy-dialog" id="tn-privacy-dialog" aria-labelledby="tn-privacy-title">
+        <button type="button" class="tn-privacy-dialog__close" aria-label="Close privacy information">
           <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
         </button>
-      </div>
-      <div class="cart-body">
-        <ion-icon name="basket-outline" aria-hidden="true"></ion-icon>
-        <h3>Your cart is empty</h3>
-        <p>Your next delicious bite is just a click away.</p>
-      </div>
-      <a href="#shop" class="btn cart-shop-btn">Continue Shopping</a>
-    </aside>
+
+        <h2 id="tn-privacy-title">Newsletter Privacy</h2>
+
+        <p>
+          This is a demonstration newsletter form. No email address
+          is transmitted until a subscription service is connected.
+          A complete privacy policy must be provided before launch.
+        </p>
+
+        <button type="button" class="tn-privacy-dialog__button">
+          Got It
+        </button>
+      </dialog>
+
+    </section>
     <!-- ==========================
+        NEWSLETTER SECTION END
+      ============================ -->
+  </main>
+
+  <!-- ==========================
+        CART SECTION START
+    ============================ -->
+  <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button type="button" id="cart-close" aria-label="Close shopping cart">
+        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+      </button>
+    </div>
+    <div class="cart-body">
+      <ion-icon name="basket-outline" aria-hidden="true"></ion-icon>
+      <h3>Your cart is empty</h3>
+      <p>Your next delicious bite is just a click away.</p>
+    </div>
+    <a href="#shop" class="btn cart-shop-btn">Continue Shopping</a>
+  </aside>
+  <!-- ==========================
         CART SECTION END
     ============================ -->
 
 
-  </body>
+  <!-- ==========================
+      FOOD GALLERY SECTION START
+  ============================ -->
+  <section class="tn-gallery" id="gallery" aria-label="TasteNest Food Gallery">
+    <div class="tn-gallery__track">
+
+      <button class="tn-gallery__item" type="button" data-gallery-index="0" aria-label="View delicious pasta">
+        <img src="/images/gallery-1.png" alt="Delicious pasta with vegetables and herbs" width="500" height="450"
+          loading="lazy">
+
+        <span class="tn-gallery__overlay" aria-hidden="true">
+          <ion-icon name="expand-outline"></ion-icon>
+        </span>
+      </button>
+
+      <button class="tn-gallery__item" type="button" data-gallery-index="1"
+        aria-label="View freshly prepared cheeseburger">
+        <img src="/images/gallery-2.png" alt="Juicy cheeseburger served with French fries" width="500" height="450"
+          loading="lazy">
+
+        <span class="tn-gallery__overlay" aria-hidden="true">
+          <ion-icon name="expand-outline"></ion-icon>
+        </span>
+      </button>
+
+      <button class="tn-gallery__item" type="button" data-gallery-index="2"
+        aria-label="View fresh crispy chicken salad">
+        <img src="/images/gallery-3.png" alt="Fresh chicken salad with vegetables and creamy dressing" width="500"
+          height="450" loading="lazy">
+
+        <span class="tn-gallery__overlay" aria-hidden="true">
+          <ion-icon name="expand-outline"></ion-icon>
+        </span>
+      </button>
+
+      <button class="tn-gallery__item" type="button" data-gallery-index="3" aria-label="View classic hamburger meal">
+        <img src="/images/gallery-4.png" alt="Classic hamburger with cherry tomato and golden fries" width="500"
+          height="450" loading="lazy">
+
+        <span class="tn-gallery__overlay" aria-hidden="true">
+          <ion-icon name="expand-outline"></ion-icon>
+        </span>
+      </button>
+
+      <button class="tn-gallery__item" type="button" data-gallery-index="4" aria-label="View crispy chicken burger">
+        <img src="/images/gallery-5.png" alt="Crispy chicken burger with cheese and fresh lettuce" width="500"
+          height="450" loading="lazy">
+
+        <span class="tn-gallery__overlay" aria-hidden="true">
+          <ion-icon name="expand-outline"></ion-icon>
+        </span>
+      </button>
+
+    </div>
+
+    <dialog class="tn-gallery__lightbox" id="tn-gallery-lightbox" aria-label="Food gallery image viewer">
+      <button class="tn-gallery__close" type="button" aria-label="Close gallery">
+        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <button class="tn-gallery__arrow tn-gallery__arrow--prev" type="button" aria-label="Previous image">
+        <ion-icon name="arrow-back-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <img class="tn-gallery__lightbox-image" src="/images/gallery-1.png" alt="" width="1000" height="800">
+
+      <button class="tn-gallery__arrow tn-gallery__arrow--next" type="button" aria-label="Next image">
+        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="tn-gallery__counter" aria-live="polite">
+        <span id="tn-gallery-current">01</span>
+        /
+        <span id="tn-gallery-total">05</span>
+      </div>
+
+    </dialog>
+
+  </section>
+  <!-- ==========================
+      FOOD GALLERY SECTION END
+    ============================ -->
+</body>
 
 </html>

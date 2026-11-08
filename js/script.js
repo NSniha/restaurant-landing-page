@@ -1648,3 +1648,135 @@ startAutoplay();
 /* ==========================
    NEWSLETTER SECTION END
 ============================ */
+
+
+
+
+/* ==========================
+   FOOD GALLERY SECTION START
+============================ */
+
+(() => {
+  "use strict";
+
+  const gallery = document.querySelector(".tn-gallery");
+
+  if (!gallery) return;
+
+  const items = [
+    ...gallery.querySelectorAll(".tn-gallery__item"),
+  ];
+
+  const lightbox = gallery.querySelector(
+    "#tn-gallery-lightbox"
+  );
+
+  const lightboxImage = lightbox.querySelector(
+    ".tn-gallery__lightbox-image"
+  );
+
+  const closeButton = lightbox.querySelector(
+    ".tn-gallery__close"
+  );
+
+  const prevButton = lightbox.querySelector(
+    ".tn-gallery__arrow--prev"
+  );
+
+  const nextButton = lightbox.querySelector(
+    ".tn-gallery__arrow--next"
+  );
+
+  const currentCounter = lightbox.querySelector(
+    "#tn-gallery-current"
+  );
+
+  const totalCounter = lightbox.querySelector(
+    "#tn-gallery-total"
+  );
+
+  let currentIndex = 0;
+
+  const images = items.map((item) => {
+    const image = item.querySelector("img");
+
+    return {
+      src: image.currentSrc || image.src,
+      alt: image.alt,
+    };
+  });
+
+  totalCounter.textContent = String(
+    images.length
+  ).padStart(2, "0");
+
+  function updateImage(index) {
+    currentIndex =
+      (index + images.length) % images.length;
+
+    const image = images[currentIndex];
+
+    lightboxImage.src = image.src;
+    lightboxImage.alt = image.alt;
+
+    currentCounter.textContent = String(
+      currentIndex + 1
+    ).padStart(2, "0");
+  }
+
+  function openGallery(index) {
+    updateImage(index);
+
+    if (!lightbox.open) {
+      lightbox.showModal();
+    }
+  }
+
+  function closeGallery() {
+    if (lightbox.open) {
+      lightbox.close();
+    }
+  }
+
+  items.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      openGallery(index);
+    });
+  });
+
+  prevButton.addEventListener("click", () => {
+    updateImage(currentIndex - 1);
+  });
+
+  nextButton.addEventListener("click", () => {
+    updateImage(currentIndex + 1);
+  });
+
+  closeButton.addEventListener("click", closeGallery);
+
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+      closeGallery();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (!lightbox.open) return;
+
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+
+      updateImage(currentIndex + 1);
+    }
+
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+
+      updateImage(currentIndex - 1);
+    }
+  });
+})();
+
+/* ==========================
+   FOOD GALLERY SECTION END
+============================ */
