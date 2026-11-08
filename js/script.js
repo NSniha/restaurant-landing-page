@@ -143,19 +143,19 @@ const nextButton = document.querySelector("#slider-next");
 
 const slides = [
   {
-    title: ["FRESH", "BAKED", "PIZZA"],
+    title: ["FRESH BAKED", "PIZZA"],
     description: "Fresh from the oven, loaded with flavor — only $19.00",
     image: "/images/pizza.png",
     alt: "Freshly baked, cheese-filled pizza with a golden crust",
   },
   {
-    title: ["DOUBLE", "CHEESE", "BURGER"],
+    title: ["DOUBLE CHEESE", "BURGER"],
     description: "Double the cheese, double the flavor — only $25.00",
     image: "/images/burger.png",
     alt: "Juicy double cheeseburger with lettuce, tomato and sauce",
   },
   {
-    title: ["HOT &", "CRISPY", "CHICKEN"],
+    title: ["HOT & CRISPY", "CHICKEN"],
     description: "Crunch into golden, juicy chicken — only $22.00",
     image: "/images/sushi.png",
     alt: "Golden crispy fried chicken drumsticks with a flavorful coating",

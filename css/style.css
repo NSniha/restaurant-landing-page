@@ -528,6 +528,9 @@ a:focus-visible {
 }
 
 @media (max-width: 991px) {
+  .header {
+      position: fixed;
+  }
   .navbar {
     position: fixed;
     top: var(--header-height);
@@ -601,6 +604,10 @@ a:focus-visible {
 
   .header-actions {
     gap: 20px;
+  }
+
+  .hero {
+    padding-top: 60px;
   }
 }
 
@@ -3448,16 +3455,16 @@ a:focus-visible {
 }
 
 .customer-review {
-  position: relative;
-  isolation: isolate;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin: 0;
-  padding-top: var(--review-spacing);
-  padding-bottom: var(--review-spacing);
-  overflow: hidden;
-  background: var(--review-white);
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    background: var(--review-white);
 }
 
 .customer-review__container {
@@ -6415,17 +6422,16 @@ a:focus-visible {
 }
 
 .tn-footer__shape--left {
-  left: -65px;
+  left: -15px;
   bottom: -10px;
 
-  width: 330px;
+  width: 180px;
 }
 
 .tn-footer__shape--right {
-  right: -70px;
-  bottom: -15px;
-
-  width: 340px;
+    right: 0;
+    bottom: 0px;
+    width: 180px;
 }
 
 .tn-footer__bottom {
