@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="180" height="100" alt="favicon-80" src="https://github.com/user-attachments/assets/e4e041ba-70d1-46bc-8bda-cf33ebecd726" />
+<img width="180" height="140" alt="favicon-80" src="https://github.com/user-attachments/assets/e4e041ba-70d1-46bc-8bda-cf33ebecd726" />
 
 ##  TasteNest | Fast Food Restaurant Landing Page
 
