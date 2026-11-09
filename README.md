@@ -1,7 +1,7 @@
 <div align="center">
 
 <img width="180" height="180" alt="favicon-180" src="https://github.com/user-attachments/assets/e4e041ba-70d1-46bc-8bda-cf33ebecd726" />
-#  TasteNest | Fast Food Restaurant Landing Page
+##  TasteNest | Fast Food Restaurant Landing Page
 
 A responsive restaurant website built with HTML, CSS and JavaScript. Fresh burgers, crispy chicken, cheesy pizza, wraps, daily deals and food stories, all in a clean, mobile-friendly design.
 
