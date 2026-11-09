@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src="images/favicon-180.png" alt="TasteNest logo" width="110" />
+![logo](https://github.com/user-attachments/assets/999bf444-10a1-4e74-8de4-ee99c970b85d)
+
 
 # TasteNest
 
