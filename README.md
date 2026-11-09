@@ -21,13 +21,7 @@ A responsive restaurant website built with HTML, CSS and JavaScript. Fresh burge
 
 ## Preview
 
-<!-- Add your screenshot: put it in the images folder and update the path below -->
-<div align="center">
-
 <img width="1280" height="800" alt="preview-restaurent-landing-page" src="https://github.com/user-attachments/assets/466befa6-07f8-4a3a-ae07-8e661ece1631" />
-
-
-</div>
 
 ---
 
