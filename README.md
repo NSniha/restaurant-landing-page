@@ -2,7 +2,7 @@
 
 <img width="180" height="180" alt="favicon-180" src="https://github.com/user-attachments/assets/e4e041ba-70d1-46bc-8bda-cf33ebecd726" />
 
-# TasteNest
+## TasteNest
 
 ### Fast Food Restaurant Landing Page
 
@@ -17,22 +17,6 @@ A responsive restaurant website built with HTML, CSS and JavaScript. Fresh burge
 <img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode" alt="HTML, CSS, JavaScript, Git, GitHub and VS Code" />
 
 </div>
-
----
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Preview](#preview)
-- [Who Is This For](#who-is-this-for)
-- [Key Features](#key-features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [How To Customize](#how-to-customize)
-- [Deploy Your Website](#deploy-your-website)
-- [FAQ](#faq)
-- [Author](#author)
 
 ---
 
