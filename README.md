@@ -18,15 +18,6 @@ A responsive restaurant website built with HTML, CSS and JavaScript. Fresh burge
 
 ---
 
-## Overview
-
-**TasteNest** is a responsive **restaurant landing page** for a fast food brand, built with pure **HTML5, CSS3 and vanilla JavaScript**. There are no frameworks and no build tools, only clean and lightweight code that loads fast and is easy to edit.
-
-The page presents the menu favorites, highlights daily deals, and shares the latest food stories, so visitors can quickly see what the restaurant offers. It works smoothly on phones, tablets and desktops.
-
-You can use it as a **restaurant website template**, a **food business landing page**, or a **front-end practice project** for learning responsive web design.
-
----
 
 ## Preview
 
@@ -37,6 +28,16 @@ You can use it as a **restaurant website template**, a **food business landing p
 
 
 </div>
+
+---
+
+## Overview
+
+**TasteNest** is a responsive **restaurant landing page** for a fast food brand, built with pure **HTML5, CSS3 and vanilla JavaScript**. There are no frameworks and no build tools, only clean and lightweight code that loads fast and is easy to edit.
+
+The page presents the menu favorites, highlights daily deals, and shares the latest food stories, so visitors can quickly see what the restaurant offers. It works smoothly on phones, tablets and desktops.
+
+You can use it as a **restaurant website template**, a **food business landing page**, or a **front-end practice project** for learning responsive web design.
 
 ---
 
