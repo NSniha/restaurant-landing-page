@@ -9,7 +9,7 @@ A responsive restaurant website built with HTML, CSS and JavaScript. Fresh burge
 <br />
 
 <!-- Replace YOUR_LIVE_LINK with your deployed site URL -->
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Website-d32228?style=for-the-badge&logo=googlechrome&logoColor=white)](https://YOUR_LIVE_LINK)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Website-d32228?style=for-the-badge&logo=googlechrome&logoColor=white)](https://dainty-peony-01db0f.netlify.app/)
 [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NSniha/restaurant-landing-page)
 
 <img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode" alt="HTML, CSS, JavaScript, Git, GitHub and VS Code" />
